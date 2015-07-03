@@ -53,7 +53,7 @@
 
     move-result-object v1
 
-    const v2, 0x105000f
+    const v2, #android:dimen@toast_y_offset#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -67,7 +67,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e0071
+    const v2, #android:integer@config_toastDefaultGravity#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -146,7 +146,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    const v4, 0x10900e3
+    const v4, #android:layout@transient_notification#t
 
     const/4 v5, 0x0
 
@@ -154,7 +154,7 @@
 
     move-result-object v3
 
-    const v4, 0x102000b
+    const v4, #android:id@message#t
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
     :cond_0
     iget-object v1, p0, Landroid/widget/Toast;->mNextView:Landroid/view/View;
 
-    const v2, 0x102000b
+    const v2, #android:id@message#t
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -422,4 +422,16 @@
     move-exception v3
 
     goto :goto_0
+.end method
+
+.method public setType(I)V
+    .locals 1
+    .param p1, "type"    # I
+
+    .prologue
+    iget-object v0, p0, Landroid/widget/Toast;->mTN:Landroid/widget/Toast$TN;
+
+    iput p1, v0, Landroid/widget/Toast$TN;->mMzToastType:I
+
+    return-void
 .end method

@@ -60,7 +60,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x1010071
+    const v0, #android:attr@gridViewStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/GridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -4207,6 +4207,10 @@
 
     move-result v3
 
+    iget v4, p0, Landroid/widget/GridView;->mScrollY:I
+
+    sub-int/2addr v3, v4
+
     if-gt p1, v3, :cond_0
 
     iget v3, p0, Landroid/widget/GridView;->mFirstPosition:I
@@ -4234,6 +4238,10 @@
     invoke-virtual {v3}, Landroid/view/View;->getTop()I
 
     move-result v3
+
+    iget v4, p0, Landroid/widget/GridView;->mScrollY:I
+
+    sub-int/2addr v3, v4
 
     if-lt p1, v3, :cond_2
 

@@ -31,7 +31,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x1010092
+    const v0, #android:attr@editTextPreferenceStyle#t
 
     invoke-direct {p0, p1, p2, v0}, Landroid/preference/EditTextPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -61,7 +61,7 @@
 
     iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
 
-    const v1, 0x1020003
+    const v1, #android:id@edit#t
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setId(I)V
 
@@ -103,7 +103,7 @@
 .method protected onAddEditTextToDialogView(Landroid/view/View;Landroid/widget/EditText;)V
     .locals 3
 
-    const v1, 0x1020352
+    const v1, #android:id@edittext_container#t
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -135,6 +135,8 @@
     move-result-object v2
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-direct/range {p0 .. p0}, Landroid/preference/EditTextPreference;->mzSetEditTextSelection()V
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getParent()Landroid/view/ViewParent;
 
@@ -339,4 +341,32 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method private mzSetEditTextSelection()V
+    .locals 3
+
+    .prologue
+    iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
+
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    iget-object v0, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
+
+    const/4 v1, 0x0
+
+    iget-object v2, p0, Landroid/preference/EditTextPreference;->mEditText:Landroid/widget/EditText;
+
+    invoke-virtual {v2}, Landroid/widget/EditText;->length()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/widget/EditText;->setSelection(II)V
+
+    :cond_0
+    return-void
 .end method

@@ -24,6 +24,10 @@
 
 
 # instance fields
+.field private mMzDragInStatusBar:Z
+
+.field private mMzStatusBarRect:Landroid/graphics/Rect;
+
 .field private mActionMode:Landroid/view/ActionMode;
 
 .field private mActionModePopup:Landroid/widget/PopupWindow;
@@ -605,7 +609,7 @@
 
     const-string v9, "android:status:background"
 
-    const v10, 0x102002f
+    const v10, #android:id@statusBarBackground#t
 
     move-object/from16 v0, p0
 
@@ -634,6 +638,8 @@
 
     iput-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mStatusColorView:Landroid/view/View;
 
+    goto :goto_flyme_0
+
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mNavigationColorView:Landroid/view/View;
@@ -659,7 +665,7 @@
 
     const-string v9, "android:navigation:background"
 
-    const v10, 0x1020030
+    const v10, #android:id@navigationBarBackground#t
 
     const/4 v11, 0x0
 
@@ -674,6 +680,7 @@
     iput-object v1, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mNavigationColorView:Landroid/view/View;
 
     :cond_1
+    :goto_flyme_0
     iget v1, v12, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     const/high16 v2, -0x80000000
@@ -936,7 +943,7 @@
 
     move-result-object v3
 
-    const v4, 0x1060032
+    const v4, #android:color@input_method_navigation_guard#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1105,7 +1112,7 @@
 
     move-result-object v8
 
-    const v9, 0x1060032
+    const v9, #android:color@input_method_navigation_guard#t
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1503,6 +1510,18 @@
 
     :cond_4
     :goto_2
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzDispatchKeyEvent(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/KeyEvent;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_flyme_0
+
+    const/4 v5, 0x1
+
+    return v5
+
+    :cond_flyme_0
+
     if-nez v2, :cond_0
 
     :cond_5
@@ -3309,7 +3328,7 @@
 
     move-result-object v2
 
-    const v8, 0x1010431
+    const v8, #android:attr@actionBarTheme#t
 
     invoke-virtual {v2, v8, v5, v9}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
@@ -3354,7 +3373,7 @@
 
     new-instance v8, Landroid/widget/PopupWindow;
 
-    const v11, 0x1010424
+    const v11, #android:attr@actionModePopupWindowStyle#t
 
     invoke-direct {v8, v0, v13, v11}, Landroid/widget/PopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -3382,7 +3401,7 @@
 
     move-result-object v8
 
-    const v11, 0x10102eb
+    const v11, #android:attr@actionBarSize#t
 
     invoke-virtual {v8, v11, v5, v9}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
@@ -3490,7 +3509,7 @@
     goto/16 :goto_3
 
     :cond_8
-    const v8, 0x102036e
+    const v8, #android:id@action_mode_bar_stub#t
 
     invoke-virtual {p0, v8}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->findViewById(I)Landroid/view/View;
 
@@ -3581,6 +3600,18 @@
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionMode:Landroid/view/ActionMode;
 
     if-eqz v2, :cond_1
+
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzSuperDispatchKeyEvent(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/KeyEvent;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_flyme_0
+
+    const/4 v1, 0x1
+
+    return v1
+
+    :cond_flyme_0
 
     if-ne v0, v1, :cond_0
 
@@ -3699,4 +3730,313 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method public dispatchDragEvent(Landroid/view/DragEvent;)Z
+    .locals 16
+    .param p1, "event"    # Landroid/view/DragEvent;
+
+    .prologue
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzStatusBarRect:Landroid/graphics/Rect;
+
+    if-nez v11, :cond_0
+
+    new-instance v11, Landroid/graphics/Rect;
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    invoke-direct {v11, v12, v13, v14, v15}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    move-object/from16 v0, p0
+
+    iput-object v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzStatusBarRect:Landroid/graphics/Rect;
+
+    :cond_0
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionMode:Landroid/view/ActionMode;
+
+    if-eqz v11, :cond_6
+
+    const/4 v5, 0x0
+
+    .local v5, "retval":Z
+    invoke-virtual/range {p1 .. p1}, Landroid/view/DragEvent;->getAction()I
+
+    move-result v11
+
+    packed-switch v11, :pswitch_data_0
+
+    invoke-super/range {p0 .. p1}, Landroid/widget/FrameLayout;->dispatchDragEvent(Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    .end local v5    # "retval":Z
+    :goto_0
+    return v5
+
+    .restart local v5    # "retval":Z
+    :pswitch_0
+    new-instance v4, Landroid/graphics/Point;
+
+    invoke-direct {v4}, Landroid/graphics/Point;-><init>()V
+
+    .local v4, "point":Landroid/graphics/Point;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->getDisplay()Landroid/view/Display;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v4}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
+
+    iget v8, v4, Landroid/graphics/Point;->x:I
+
+    .local v8, "width":I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->getContext()Landroid/content/Context;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v11
+
+    const/4 v12, 0x1
+
+    const-string v13, "status_bar_height"
+
+    invoke-static {v12, v13}, Lcom/meizu/util/InternalResUtils;->getInternalResId(ILjava/lang/String;)I
+
+    move-result v12
+
+    invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v3
+
+    .local v3, "height":I
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzStatusBarRect:Landroid/graphics/Rect;
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    invoke-virtual {v11, v12, v13, v8, v3}, Landroid/graphics/Rect;->set(IIII)V
+
+    const/4 v11, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzDragInStatusBar:Z
+
+    invoke-super/range {p0 .. p1}, Landroid/widget/FrameLayout;->dispatchDragEvent(Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    goto :goto_0
+
+    .end local v3    # "height":I
+    .end local v4    # "point":Landroid/graphics/Point;
+    .end local v8    # "width":I
+    :pswitch_1
+    invoke-virtual/range {p1 .. p1}, Landroid/view/DragEvent;->getX()F
+
+    move-result v11
+
+    float-to-int v9, v11
+
+    .local v9, "x":I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/DragEvent;->getY()F
+
+    move-result v11
+
+    float-to-int v10, v11
+
+    .local v10, "y":I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->getViewRootImpl()Landroid/view/ViewRootImpl;
+
+    move-result-object v6
+
+    .local v6, "root":Landroid/view/ViewRootImpl;
+    const/4 v7, 0x0
+
+    .local v7, "statusBarNfcShareEnabled":Z
+    if-eqz v6, :cond_1
+
+    invoke-virtual {v6}, Landroid/view/ViewRootImpl;->mzGetStatusBarNfcShareEnabled()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_1
+
+    invoke-virtual {v6}, Landroid/view/ViewRootImpl;->mzGetShadowTouchPoint()Landroid/graphics/Point;
+
+    move-result-object v11
+
+    if-eqz v11, :cond_1
+
+    invoke-virtual {v6}, Landroid/view/ViewRootImpl;->mzGetShadowTouchPoint()Landroid/graphics/Point;
+
+    move-result-object v11
+
+    iget v11, v11, Landroid/graphics/Point;->y:I
+
+    sub-int/2addr v10, v11
+
+    :cond_1
+    if-eqz v7, :cond_3
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzStatusBarRect:Landroid/graphics/Rect;
+
+    iget v11, v11, Landroid/graphics/Rect;->bottom:I
+
+    if-ge v10, v11, :cond_3
+
+    move-object/from16 v0, p0
+
+    iget-boolean v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzDragInStatusBar:Z
+
+    if-nez v11, :cond_2
+
+    const/4 v11, 0x6
+
+    move-object/from16 v0, p1
+
+    invoke-static {v11, v0}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzObtainDragEvent(ILandroid/view/DragEvent;)Landroid/view/DragEvent;
+
+    move-result-object v2
+
+    .local v2, "exitDrag":Landroid/view/DragEvent;
+    move-object/from16 v0, p0
+
+    invoke-super {v0, v2}, Landroid/widget/FrameLayout;->dispatchDragEvent(Landroid/view/DragEvent;)Z
+
+    const/4 v11, 0x5
+
+    move-object/from16 v0, p1
+
+    invoke-static {v11, v0}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzObtainDragEvent(ILandroid/view/DragEvent;)Landroid/view/DragEvent;
+
+    move-result-object v1
+
+    .local v1, "enterDrag":Landroid/view/DragEvent;
+    move-object/from16 p1, v1
+
+    .end local v1    # "enterDrag":Landroid/view/DragEvent;
+    .end local v2    # "exitDrag":Landroid/view/DragEvent;
+    :cond_2
+    const/4 v11, 0x1
+
+    move-object/from16 v0, p0
+
+    iput-boolean v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzDragInStatusBar:Z
+
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzDoStatusBarDrag(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    goto/16 :goto_0
+
+    :cond_3
+    move-object/from16 v0, p0
+
+    iget-boolean v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzDragInStatusBar:Z
+
+    if-eqz v11, :cond_4
+
+    const/4 v11, 0x6
+
+    move-object/from16 v0, p1
+
+    invoke-static {v11, v0}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzObtainDragEvent(ILandroid/view/DragEvent;)Landroid/view/DragEvent;
+
+    move-result-object v2
+
+    .restart local v2    # "exitDrag":Landroid/view/DragEvent;
+    move-object/from16 v0, p0
+
+    invoke-static {v0, v2}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzDoStatusBarDrag(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/DragEvent;)Z
+
+    const/4 v11, 0x5
+
+    move-object/from16 v0, p1
+
+    invoke-static {v11, v0}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzObtainDragEvent(ILandroid/view/DragEvent;)Landroid/view/DragEvent;
+
+    move-result-object v1
+
+    .restart local v1    # "enterDrag":Landroid/view/DragEvent;
+    move-object/from16 p1, v1
+
+    .end local v1    # "enterDrag":Landroid/view/DragEvent;
+    .end local v2    # "exitDrag":Landroid/view/DragEvent;
+    :cond_4
+    const/4 v11, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzDragInStatusBar:Z
+
+    invoke-super/range {p0 .. p1}, Landroid/widget/FrameLayout;->dispatchDragEvent(Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    goto/16 :goto_0
+
+    .end local v6    # "root":Landroid/view/ViewRootImpl;
+    .end local v7    # "statusBarNfcShareEnabled":Z
+    .end local v9    # "x":I
+    .end local v10    # "y":I
+    :pswitch_2
+    move-object/from16 v0, p0
+
+    iget-boolean v11, v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mMzDragInStatusBar:Z
+
+    if-eqz v11, :cond_5
+
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->mzDoStatusBarDrag(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    goto/16 :goto_0
+
+    :cond_5
+    invoke-super/range {p0 .. p1}, Landroid/widget/FrameLayout;->dispatchDragEvent(Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    goto/16 :goto_0
+
+    .end local v5    # "retval":Z
+    :cond_6
+    invoke-super/range {p0 .. p1}, Landroid/widget/FrameLayout;->dispatchDragEvent(Landroid/view/DragEvent;)Z
+
+    move-result v5
+
+    goto/16 :goto_0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+    .end packed-switch
+.end method
+
+.method getActionMode()Landroid/view/ActionMode;
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionMode:Landroid/view/ActionMode;
+
+    return-object v0
 .end method

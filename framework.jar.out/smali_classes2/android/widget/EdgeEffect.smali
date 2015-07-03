@@ -46,6 +46,8 @@
 
 
 # instance fields
+.field private mMzAbleDraw:Z
+
 .field private mBaseGlowScale:F
 
 .field private final mBounds:Landroid/graphics/Rect;

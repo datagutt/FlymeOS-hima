@@ -14664,3 +14664,10 @@
 
     return-void
 .end method
+
+.method mzNotifyActivityDrawnForKeyguard()V
+    .locals 0
+
+    .prologue
+    return-void
+.end method

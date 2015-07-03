@@ -244,7 +244,7 @@
 
     move-result-object v3
 
-    const v4, 0x1060058
+    const v4, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -264,7 +264,7 @@
 
     iget-object v3, v3, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v4, 0x104045b
+    const v4, #android:string@app_running_notification_title#t
 
     const/4 v5, 0x1
 
@@ -286,7 +286,7 @@
 
     iget-object v4, v4, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    const v5, 0x104045c
+    const v5, #android:string@app_running_notification_text#t
 
     const/4 v6, 0x1
 

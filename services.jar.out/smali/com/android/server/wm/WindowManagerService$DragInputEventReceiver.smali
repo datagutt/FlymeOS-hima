@@ -55,6 +55,18 @@
 
     if-eqz v7, :cond_1
 
+    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/InjectorWMS;->hookOnInputEvent(Landroid/view/InputEvent;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_flyme_0
+
+    invoke-virtual {p0, p1, v3}, Lcom/android/server/wm/WindowManagerService$DragInputEventReceiver;->finishInputEvent(Landroid/view/InputEvent;Z)V
+
+    return-void
+
+    :cond_flyme_0
+
     move-object v0, p1
 
     check-cast v0, Landroid/view/MotionEvent;

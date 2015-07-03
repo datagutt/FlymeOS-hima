@@ -69,7 +69,7 @@
 
     if-eqz v0, :cond_1
 
-    const v2, 0x1040482
+    const v2, #android:string@smv_application#t
 
     const/4 v3, 0x2
 
@@ -98,7 +98,7 @@
 
     const/4 v2, -0x1
 
-    const v3, 0x10404e5
+    sget v3, Lcom/flyme/internal/R$string;->dlg_ok:I
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -118,7 +118,7 @@
 
     const/4 v2, -0x2
 
-    const v3, 0x1040479
+    const v3, #android:string@report#t
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -133,7 +133,7 @@
     invoke-virtual {p0, v2, v3, v4}, Lcom/android/server/am/StrictModeViolationDialog;->setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
 
     :cond_0
-    const v2, 0x1040470
+    const v2, #android:string@aerr_title#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -194,7 +194,7 @@
     :cond_1
     iget-object v0, p4, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
-    const v2, 0x1040483
+    const v2, #android:string@smv_process#t
 
     new-array v3, v6, [Ljava/lang/Object;
 

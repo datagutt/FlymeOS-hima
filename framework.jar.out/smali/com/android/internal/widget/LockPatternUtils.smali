@@ -755,6 +755,8 @@
 
     iput-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mLockSettingsService:Lcom/android/internal/widget/ILockSettings;
 
+    invoke-direct/range {p0 .. p0}, Lcom/android/internal/widget/LockPatternUtils;->setFlymeLockSettingsService()V
+
     :cond_0
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mLockSettingsService:Lcom/android/internal/widget/ILockSettings;
 
@@ -3394,7 +3396,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120043
+    const v1, #android:bool@config_voice_capable#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -3412,7 +3414,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120036
+    const v1, #android:bool@config_enable_emergency_call_while_sim_locked#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -3799,7 +3801,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120035
+    const v1, #android:bool@config_enable_puk_unlock_screen#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -5698,7 +5700,7 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x1040372
+    const v0, #android:string@lockscreen_return_to_call#t
 
     :goto_0
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
@@ -5714,7 +5716,7 @@
     goto :goto_1
 
     :cond_1
-    const v0, 0x1040371
+    const v0, #android:string@lockscreen_emergency_call#t
 
     goto :goto_0
 .end method
@@ -5757,6 +5759,25 @@
     const/4 v2, -0x2
 
     invoke-static {v0, v1, p1, v2}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+
+    return-void
+.end method
+
+.method private setFlymeLockSettingsService()V
+    .locals 1
+
+    .prologue
+    const-string v0, "lock_settings"
+
+    invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/internal/widget/ILockSettings$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/widget/ILockSettings;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mLockSettingsService:Lcom/android/internal/widget/ILockSettings;
 
     return-void
 .end method

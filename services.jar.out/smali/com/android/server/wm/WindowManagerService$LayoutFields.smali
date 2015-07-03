@@ -226,3 +226,174 @@
 
     return p1
 .end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1200(Lcom/android/server/wm/WindowManagerService$LayoutFields;)Z
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mObscured:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1202(Lcom/android/server/wm/WindowManagerService$LayoutFields;Z)Z
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # Z
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mObscured:Z
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1300(Lcom/android/server/wm/WindowManagerService$LayoutFields;)Lcom/android/server/wm/Session;
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mHoldScreen:Lcom/android/server/wm/Session;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1302(Lcom/android/server/wm/WindowManagerService$LayoutFields;Lcom/android/server/wm/Session;)Lcom/android/server/wm/Session;
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # Lcom/android/server/wm/Session;
+#    .prologue
+#    iput-object p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mHoldScreen:Lcom/android/server/wm/Session;
+#    return-object p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1400(Lcom/android/server/wm/WindowManagerService$LayoutFields;)Z
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mSyswin:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1402(Lcom/android/server/wm/WindowManagerService$LayoutFields;Z)Z
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # Z
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mSyswin:Z
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1500(Lcom/android/server/wm/WindowManagerService$LayoutFields;)F
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mScreenBrightness:F
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1502(Lcom/android/server/wm/WindowManagerService$LayoutFields;F)F
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # F
+#    .prologue
+#    iput p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mScreenBrightness:F
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1600(Lcom/android/server/wm/WindowManagerService$LayoutFields;)F
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mButtonBrightness:F
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1602(Lcom/android/server/wm/WindowManagerService$LayoutFields;F)F
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # F
+#    .prologue
+#    iput p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mButtonBrightness:F
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1700(Lcom/android/server/wm/WindowManagerService$LayoutFields;)J
+#    .locals 2
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget-wide v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mUserActivityTimeout:J
+#    return-wide v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1702(Lcom/android/server/wm/WindowManagerService$LayoutFields;J)J
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # J
+#    .prologue
+#    iput-wide p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mUserActivityTimeout:J
+#    return-wide p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1800(Lcom/android/server/wm/WindowManagerService$LayoutFields;)Z
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .prologue
+#    iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mUpdateRotation:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1802(Lcom/android/server/wm/WindowManagerService$LayoutFields;Z)Z
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/wm/WindowManagerService$LayoutFields;
+#    .param p1, "x1"    # Z
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mUpdateRotation:Z
+#    return p1
+#.end method
+
+.method mzGetFieldSyswin()Z
+    .locals 1
+
+    .prologue
+    iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mSyswin:Z
+
+    return v0
+.end method
+
+.method mzGetFieldUserActivityTimeout()J
+    .locals 2
+
+    .prologue
+    iget-wide v0, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mUserActivityTimeout:J
+
+    return-wide v0
+.end method
+
+.method mzSetFieldSyswin(Z)V
+    .locals 0
+    .param p1, "syswin"    # Z
+
+    .prologue
+    iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mSyswin:Z
+
+    return-void
+.end method
+
+.method mzSetFieldUserActivityTimeout(J)V
+    .locals 1
+    .param p1, "timeOut"    # J
+
+    .prologue
+    iput-wide p1, p0, Lcom/android/server/wm/WindowManagerService$LayoutFields;->mUserActivityTimeout:J
+
+    return-void
+.end method

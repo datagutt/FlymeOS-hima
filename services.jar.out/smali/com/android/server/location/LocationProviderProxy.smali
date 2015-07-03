@@ -106,6 +106,8 @@
 
     iput-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
 
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/location/LocationProviderProxy;->mzSetProviderName()V
+
     return-void
 .end method
 
@@ -910,4 +912,90 @@
     invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
+.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$000()Z
+#    .locals 1
+#    .prologue
+#    sget-boolean v0, Lcom/android/server/location/LocationProviderProxy;->D:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$100(Lcom/android/server/location/LocationProviderProxy;)Ljava/lang/Object;
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .prologue
+#    iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mLock:Ljava/lang/Object;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$200(Lcom/android/server/location/LocationProviderProxy;)Z
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .prologue
+#    iget-boolean v0, p0, Lcom/android/server/location/LocationProviderProxy;->mEnabled:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$300(Lcom/android/server/location/LocationProviderProxy;)Lcom/android/internal/location/ProviderRequest;
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .prologue
+#    iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mRequest:Lcom/android/internal/location/ProviderRequest;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$400(Lcom/android/server/location/LocationProviderProxy;)Landroid/os/WorkSource;
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .prologue
+#    iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mWorksource:Landroid/os/WorkSource;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$500(Lcom/android/server/location/LocationProviderProxy;)Lcom/android/internal/location/ILocationProvider;
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .prologue
+#    invoke-direct {p0}, Lcom/android/server/location/LocationProviderProxy;->getService()Lcom/android/internal/location/ILocationProvider;
+#    move-result-object v0
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$600(Lcom/android/server/location/LocationProviderProxy;)Lcom/android/server/ServiceWatcher;
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .prologue
+#    iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$702(Lcom/android/server/location/LocationProviderProxy;Lcom/android/internal/location/ProviderProperties;)Lcom/android/internal/location/ProviderProperties;
+#    .locals 0
+#    .param p0, "x0"    # Lcom/android/server/location/LocationProviderProxy;
+#    .param p1, "x1"    # Lcom/android/internal/location/ProviderProperties;
+#    .prologue
+#    iput-object p1, p0, Lcom/android/server/location/LocationProviderProxy;->mProperties:Lcom/android/internal/location/ProviderProperties;
+#    return-object p1
+#.end method
+
+.method private mzSetProviderName()V
+    .locals 2
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
+
+    iget-object v1, p0, Lcom/android/server/location/LocationProviderProxy;->mName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/android/server/ServiceWatcher;->setProviderName(Ljava/lang/String;)V
+
+    return-void
 .end method

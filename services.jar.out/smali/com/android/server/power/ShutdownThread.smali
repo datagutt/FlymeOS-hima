@@ -205,7 +205,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x10400e9
+    const v2, #android:string@power_off#t
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -213,7 +213,7 @@
 
     invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    const v2, 0x10400ed
+    const v2, #android:string@shutdown_progress#t
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -233,7 +233,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v1}, Landroid/app/ProgressDialog;->show()V
+    invoke-static/range {p0 .. p0}, Lcom/android/server/power/InjectorPower;->showShutDownAnimation(Landroid/content/Context;)V
 
     sget-object v2, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
 
@@ -612,7 +612,7 @@
 
     move-result-object v3
 
-    const v4, 0x10e003b
+    const v4, #android:integer@config_longPressOnPowerBehavior#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -622,7 +622,7 @@
 
     if-eqz v3, :cond_3
 
-    const v2, 0x10400f1
+    const v2, #android:string@reboot_safemode_confirm#t
 
     :goto_2
     sget-boolean v3, Lcom/android/server/HtcLogChecker;->DEBUG_FLAG:Z
@@ -675,7 +675,7 @@
 
     if-eqz v3, :cond_6
 
-    const v3, 0x10400f0
+    const v3, #android:string@reboot_safemode_title#t
 
     :goto_4
     invoke-virtual {v4, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -686,7 +686,7 @@
 
     move-result-object v3
 
-    const v4, 0x1040013
+    const v4, #android:string@yes#t
 
     new-instance v5, Lcom/android/server/power/ShutdownThread$1;
 
@@ -696,7 +696,7 @@
 
     move-result-object v3
 
-    const v4, 0x1040009
+    const v4, #android:string@no#t
 
     const/4 v5, 0x0
 
@@ -739,12 +739,12 @@
 
     if-ne v1, v3, :cond_4
 
-    const v2, 0x10400ef
+    const v2, #android:string@shutdown_confirm_question#t
 
     goto :goto_2
 
     :cond_4
-    const v2, 0x10400ee
+    const v2, #android:string@shutdown_confirm#t
 
     goto :goto_2
 
@@ -774,7 +774,7 @@
     goto :goto_3
 
     :cond_6
-    const v3, 0x10400e9
+    const v3, #android:string@power_off#t
 
     goto :goto_4
 

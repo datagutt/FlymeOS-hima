@@ -467,7 +467,9 @@
 
     if-eqz v1, :cond_2
 
-    or-int/2addr p2, v4
+    const/high16 v1, 0x40000000    # 2.0f
+
+    or-int/2addr p2, v1
 
     :cond_0
     :goto_1

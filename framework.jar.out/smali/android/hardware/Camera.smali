@@ -3520,3 +3520,167 @@
 
 .method public final native unlock()V
 .end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$000(Landroid/hardware/Camera;)Landroid/hardware/Camera$ShutterCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mShutterCallback:Landroid/hardware/Camera$ShutterCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$100(Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mRawImageCallback:Landroid/hardware/Camera$PictureCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1000(Landroid/hardware/Camera;)Landroid/hardware/Camera$OnZoomChangeListener;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mZoomListener:Landroid/hardware/Camera$OnZoomChangeListener;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1100(Landroid/hardware/Camera;)Landroid/hardware/Camera$FaceDetectionListener;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mFaceListener:Landroid/hardware/Camera$FaceDetectionListener;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1200(Landroid/hardware/Camera;)Landroid/hardware/Camera$ErrorCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mErrorCallback:Landroid/hardware/Camera$ErrorCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$1300(Landroid/hardware/Camera;)Landroid/hardware/Camera$AutoFocusMoveCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mAutoFocusMoveCallback:Landroid/hardware/Camera$AutoFocusMoveCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$200(Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mJpegCallback:Landroid/hardware/Camera$PictureCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$300(Landroid/hardware/Camera;)Landroid/hardware/Camera$PreviewCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mPreviewCallback:Landroid/hardware/Camera$PreviewCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$302(Landroid/hardware/Camera;Landroid/hardware/Camera$PreviewCallback;)Landroid/hardware/Camera$PreviewCallback;
+#    .locals 0
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .param p1, "x1"    # Landroid/hardware/Camera$PreviewCallback;
+#    .prologue
+#    iput-object p1, p0, Landroid/hardware/Camera;->mPreviewCallback:Landroid/hardware/Camera$PreviewCallback;
+#    return-object p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$400(Landroid/hardware/Camera;)Z
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-boolean v0, p0, Landroid/hardware/Camera;->mOneShot:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$500(Landroid/hardware/Camera;)Z
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-boolean v0, p0, Landroid/hardware/Camera;->mWithBuffer:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$600(Landroid/hardware/Camera;ZZ)V
+#    .locals 0
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .param p1, "x1"    # Z
+#    .param p2, "x2"    # Z
+#    .prologue
+#    invoke-direct {p0, p1, p2}, Landroid/hardware/Camera;->setHasPreviewCallback(ZZ)V
+#    return-void
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$700(Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mPostviewCallback:Landroid/hardware/Camera$PictureCallback;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$800(Landroid/hardware/Camera;)Ljava/lang/Object;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mAutoFocusCallbackLock:Ljava/lang/Object;
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$900(Landroid/hardware/Camera;)Landroid/hardware/Camera$AutoFocusCallback;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/hardware/Camera;
+#    .prologue
+#    iget-object v0, p0, Landroid/hardware/Camera;->mAutoFocusCallback:Landroid/hardware/Camera$AutoFocusCallback;
+#    return-object v0
+#.end method
+
+.method private hook_cameraInitNormal(I)I
+    .locals 1
+    .param p1, "cameraId"    # I
+
+    .prologue
+    const/16 v0, 0x4c
+
+    invoke-static {v0}, Lmeizu/security/FlymePermissionManager;->isFlymePermissionGranted(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0, p1}, Landroid/hardware/Camera;->cameraInitNormal(I)I
+
+    move-result v0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method

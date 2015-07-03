@@ -628,3 +628,12 @@
 
     goto :goto_0
 .end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$100(Landroid/app/WallpaperManager$Globals;)Landroid/app/IWallpaperManager;
+#    .locals 1
+#    .param p0, "x0"    # Landroid/app/WallpaperManager$Globals;
+#    .prologue
+#    iget-object v0, p0, Landroid/app/WallpaperManager$Globals;->mService:Landroid/app/IWallpaperManager;
+#    return-object v0
+#.end method

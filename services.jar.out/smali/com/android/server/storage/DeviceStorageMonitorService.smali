@@ -1695,7 +1695,7 @@
 
     check-cast v8, Landroid/app/NotificationManager;
 
-    const v3, 0x1040458
+    const v3, #android:string@low_internal_storage_view_title#t
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1705,7 +1705,7 @@
 
     if-eqz v3, :cond_2
 
-    const v3, 0x1040459
+    const v3, #android:string@low_internal_storage_view_text#t
 
     :goto_1
     invoke-virtual {v0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -1724,7 +1724,7 @@
 
     invoke-direct {v1, v0}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x1080655
+    const v3, #android:drawable@stat_notify_disk_full#t
 
     invoke-virtual {v1, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -1738,7 +1738,7 @@
 
     move-result-object v3
 
-    const v5, 0x1060058
+    const v5, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1822,7 +1822,7 @@
     goto/16 :goto_0
 
     :cond_2
-    const v3, 0x104045a
+    const v3, #android:string@low_internal_storage_view_text_no_boot#t
 
     goto :goto_1
 
@@ -1999,7 +1999,7 @@
 
     invoke-direct {v5}, Landroid/app/Notification;-><init>()V
 
-    const v1, 0x1080655
+    const v1, #android:drawable@stat_notify_disk_full#t
 
     iput v1, v5, Landroid/app/Notification;->icon:I
 
@@ -2081,7 +2081,7 @@
 
     move-result-object v12
 
-    const v13, 0x10900cf
+    const v13, #android:layout@status_bar_latest_event_content#t
 
     invoke-direct {v11, v12, v13}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
@@ -2089,19 +2089,19 @@
 
     iget-object v11, v5, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
 
-    const v12, 0x1020006
+    const v12, #android:id@icon#t
 
     invoke-virtual {v11, v12, v1}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
     iget-object v11, v5, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
 
-    const v12, 0x1020016
+    const v12, #android:id@title#t
 
     invoke-virtual {v11, v12, v10}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     iget-object v11, v5, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
 
-    const v12, 0x1020068
+    const v12, #android:id@text#t
 
     invoke-virtual {v11, v12, v0}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
@@ -2685,3 +2685,12 @@
 
     goto :goto_0
 .end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$100(Lcom/android/server/storage/DeviceStorageMonitorService;)Z
+#    .locals 1
+#    .param p0, "x0"    # Lcom/android/server/storage/DeviceStorageMonitorService;
+#    .prologue
+#    iget-boolean v0, p0, Lcom/android/server/storage/DeviceStorageMonitorService;->mIsBootImageOnDisk:Z
+#    return v0
+#.end method

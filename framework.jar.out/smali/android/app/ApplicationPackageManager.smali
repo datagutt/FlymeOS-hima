@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/app/ApplicationPackageManager$FlymeInjector;,
         Landroid/app/ApplicationPackageManager$ResourceName;
     }
 .end annotation
@@ -165,7 +166,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x1080356
+    const v1, #android:drawable@ic_corp_icon_badge#t
 
     :goto_0
     return v1
@@ -2209,9 +2210,11 @@
 
     move-result-object v0
 
-    const v1, 0x1080093
+    const v1, #android:drawable@sym_def_app_icon#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    invoke-static {}, Landroid/app/ApplicationPackageManager$FlymeInjector;->getDefaultFlymeActivityIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -2239,6 +2242,7 @@
     return-object v4
 
     :cond_0
+    :cond_flyme_0
     if-nez p3, :cond_1
 
     const/16 v5, 0x400
@@ -4143,7 +4147,7 @@
 
     move-result-object v1
 
-    const v2, 0x1080354
+    const v2, #android:drawable@ic_corp_badge#t
 
     invoke-virtual {v1, v2, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -4237,7 +4241,7 @@
 
     move-result-object v1
 
-    const v2, 0x104066d
+    const v2, #android:string@managed_profile_label_badge#t
 
     const/4 v3, 0x1
 

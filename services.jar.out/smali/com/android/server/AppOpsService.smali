@@ -1476,6 +1476,17 @@
     move-result-object v9
 
     invoke-static {v8, v9}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/16 v8, 0x3e9
+
+    if-ne v7, v8, :cond_flyme_0
+
+    const/16 p1, 0x3e9
+
+    goto :goto_flyme_0
+
+    :cond_flyme_0
+
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

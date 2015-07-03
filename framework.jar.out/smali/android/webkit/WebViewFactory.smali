@@ -437,6 +437,22 @@
     return-object v3
 
     :cond_0
+    invoke-static {}, Landroid/os/Process;->myUid()I
+
+    move-result v3
+
+    if-nez v3, :cond_flyme_0
+
+    new-instance v3, Ljava/lang/UnsupportedOperationException;
+
+    const-string v6, "For security reasons, WebView is not allowed in privileged processes"
+
+    invoke-direct {v3, v6}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_flyme_0
+
     const-wide/16 v6, 0x10
 
     const-string v3, "WebViewFactory.getProvider()"
@@ -756,6 +772,12 @@
     const-string v3, ""
 
     goto :goto_0
+
+    :cond_flyme_0
+
+    const/4 v5, 0x0
+
+    goto :goto_flyme_0
 .end method
 
 .method public static getWebViewPackageName()Ljava/lang/String;
@@ -765,7 +787,7 @@
 
     move-result-object v0
 
-    const v1, 0x1040046
+    const v1, #android:string@config_webViewPackageName#t
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 

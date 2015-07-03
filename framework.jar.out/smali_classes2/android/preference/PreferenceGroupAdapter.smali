@@ -21,6 +21,8 @@
 
 
 # instance fields
+.field private mIsThemeLight:Z
+
 .field private mHandler:Landroid/os/Handler;
 
 .field private mHasReturnedViewTypeCount:Z
@@ -131,6 +133,8 @@
     iput-object v0, p0, Landroid/preference/PreferenceGroupAdapter;->mPreferenceLayouts:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Landroid/preference/PreferenceGroupAdapter;->syncMyPreferences()V
+
+    invoke-direct/range {p0 .. p0}, Landroid/preference/PreferenceGroupAdapter;->initFlymeExtFields()V
 
     return-void
 .end method
@@ -658,6 +662,18 @@
     return v0
 
     :cond_1
+    iget-boolean v0, p0, Landroid/preference/PreferenceGroupAdapter;->mIsThemeLight:Z
+
+    if-eqz v0, :cond_flyme_0
+
+    invoke-direct/range {p0 .. p1}, Landroid/preference/PreferenceGroupAdapter;->mzIsEnabled(I)Z
+
+    move-result v0
+
+    return v0
+
+    :cond_flyme_0
+
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceGroupAdapter;->getItem(I)Landroid/preference/Preference;
 
     move-result-object v0
@@ -709,4 +725,70 @@
     iput-object p1, p0, Landroid/preference/PreferenceGroupAdapter;->mHighlightedDrawable:Landroid/graphics/drawable/Drawable;
 
     return-void
+.end method
+
+.method private initFlymeExtFields()V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x0
+
+    iget-object v1, p0, Landroid/preference/PreferenceGroupAdapter;->mPreferenceGroup:Landroid/preference/PreferenceGroup;
+
+    invoke-virtual {v1}, Landroid/preference/PreferenceGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .local v0, "context":Landroid/content/Context;
+    if-nez v0, :cond_0
+
+    iput-boolean v2, p0, Landroid/preference/PreferenceGroupAdapter;->mIsThemeLight:Z
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/Context;->isDeviceDefaultTheme()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Landroid/preference/PreferenceGroupAdapter;->mIsThemeLight:Z
+
+    :goto_0
+    return-void
+
+    :cond_1
+    iput-boolean v2, p0, Landroid/preference/PreferenceGroupAdapter;->mIsThemeLight:Z
+
+    goto :goto_0
+.end method
+
+.method private mzIsEnabled(I)Z
+    .locals 2
+    .param p1, "position"    # I
+
+    .prologue
+    invoke-virtual {p0, p1}, Landroid/preference/PreferenceGroupAdapter;->getItem(I)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    .local v0, "preference":Landroid/preference/Preference;
+    invoke-virtual {v0}, Landroid/preference/Preference;->isEnabled()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0}, Landroid/preference/Preference;->isSelectable()Z
+
+    move-result v1
+
+    :goto_0
+    return v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    goto :goto_0
 .end method

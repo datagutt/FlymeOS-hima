@@ -79,6 +79,9 @@
     invoke-static {v0}, Landroid/widget/Gallery;->access$500(Landroid/widget/Gallery;)V
 
     :cond_0
+
+    invoke-direct/range {p0 .. p1}, Landroid/widget/Gallery$FlingRunnable;->mzEndFling(Z)V
+
     return-void
 .end method
 
@@ -405,5 +408,22 @@
 
     invoke-direct {p0, p1}, Landroid/widget/Gallery$FlingRunnable;->endFling(Z)V
 
+    return-void
+.end method
+
+.method private mzEndFling(Z)V
+    .locals 2
+    .param p1, "scrollIntoSlots"    # Z
+
+    .prologue
+    if-nez p1, :cond_0
+
+    iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/Gallery;->reportScrollStateChange(I)V
+
+    :cond_0
     return-void
 .end method

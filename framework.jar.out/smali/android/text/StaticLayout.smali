@@ -3084,3 +3084,29 @@
 
     return-void
 .end method
+
+.method private mzCalculateEllipsis(Landroid/text/TextPaint;F)F
+    .locals 3
+    .param p1, "paint"    # Landroid/text/TextPaint;
+    .param p2, "ellipsisWidth"    # F
+
+    .prologue
+    invoke-static {}, Landroid/os/BuildExt;->isProductInternational()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Landroid/text/StaticLayout;->ELLIPSIS_TWO_DOTS:[C
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-virtual {p1, v0, v1, v2}, Landroid/text/TextPaint;->measureText([CII)F
+
+    move-result p2
+
+    :cond_0
+    return p2
+.end method
