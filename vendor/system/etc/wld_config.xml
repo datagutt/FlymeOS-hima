@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<WldConfig>
+
+    <tab name="Setting">
+        <!--
+          * The WLD will launch repeatly by this period value.
+          * The unit of time is millisecond. (ms)
+        -->
+        <item name="DetectPeriod" value="1800000" />
+        <!--
+          * In order to get CPU usage of the specific wakelock,
+          * The WLD will sleep and wait until time's up.
+          * The unit of time is millisecond. (ms)
+        -->
+        <item name="SleepTime" value="300000" />
+    </tab>
+
+    <tab name="Criteria">
+        <!--
+          * The wakelock would be a candidate of abnormal wakelock
+          * if it is held for more than this time.
+          * The unit of time is millisecond. (ms)
+        -->
+        <item name="HeldTime" value="1800000" />
+        <!--
+          * The wakelock would be a candidate of abnormal wakelock
+          * if its CPU usage is smaller than this percentage.
+          * The unit of value is percentage. (%)
+        -->
+        <item name="CpuUsage" value="1" />
+        <!--
+          * The wakelock would be a candidate of abnormal wakelock
+          * if its throughput is smaller than this value.
+          * The unit of value is bytes per second. (bytes/s)
+        -->
+        <item name="Throughput" value="20480" />
+        <!--
+          * The package would be a candidate of abnormal package
+          * if its CPU usage is greater than this value.
+          * The unit of value is percentage. (%)
+        -->
+        <item name="CCUCpuUsage" value="3" />
+        <!--
+          * The package would be a candidate of abnormal package
+          * if its throughput is greater than this value.
+          * The unit of value is bytes per second. (bytes/s)
+        -->
+        <item name="CCUThroughput" value="20480" />
+        <!--
+          * The candidate will be skipped if the package importance
+          * level is smaller than this given value.
+          * More detail for value to see "ActivityManager.RunningAppProcessInfo".
+        -->
+        <item name="CCUImportance" value="300" />
+    </tab>
+
+    <tab name="IgnoreList">
+        <!--
+          * All abnormal wakelocks would be released if white list
+          * is disable. The abnormal wakelock in white list would be
+          * released if white list is enable.
+        -->
+        <items name="WhiteList" enable="false">
+            <item name="audio.core.uap.WakeLockUtil" />
+        </items>
+
+        <!--
+          * The abnormal wakelock would be skipped if black list is
+          * enable and it is in.
+          * category: package, process, wakelock
+          * operation: equal, contain
+        -->
+        <items name="BlackList" enable="true">
+            <item name="com.htc" category="package" operation="contain" />
+            <item name="com.htc" category="process" operation="contain" />
+            <item name="android" category="package" operation="equal" />
+            <item name="com.redbend.vdmc" category="process" operation="equal" />
+            <item name="com.android.bluetooth" category="process" operation="equal" />
+        </items>
+    </tab>
+
+</WldConfig>

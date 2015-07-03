@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodecList>
+    <Encoders>
+        <!-- Audio Aricent -->
+        <MediaCodec name="OMX.ARICENT.AUDIO.ENC.QCELP" type="audio/qcelp" />
+    </Encoders>
+    <Decoders>
+        <!-- Audio Aricent -->
+        <MediaCodec name="OMX.ARICENT.AUDIO.DEC.WMAPRO" type="audio/x-ms-wma" />
+        <MediaCodec name="OMX.ARICENT.AUDIO.DEC.QCELP" type="audio/qcelp" />
+        <!-- Video Aricent -->
+        <MediaCodec name="OMX.ARICENT.VIDEO.DEC.WMV" type="video/x-ms-wmv" />
+        <!-- DOLBY_UDC -->
+        <MediaCodec name="OMX.dolby.ac3.decoder">
+            <Type name="audio/ac3"/>
+            <Quirk name="needs-flush-before-disable"/>
+            <Quirk name="requires-flush-complete-emulation"/>
+        </MediaCodec>
+        <MediaCodec name="OMX.dolby.ec3.decoder">
+            <Type name="audio/eac3"/>
+            <Quirk name="needs-flush-before-disable"/>
+            <Quirk name="requires-flush-complete-emulation"/>
+        </MediaCodec>
+        <MediaCodec name="OMX.dolby.ec3_joc.decoder">
+            <Type name="audio/eac3-joc"/>
+            <Quirk name="needs-flush-before-disable"/>
+            <Quirk name="requires-flush-complete-emulation"/>
+        </MediaCodec>
+        <!-- DOLBY_UDC END -->
+    </Decoders>
+</CodecList>

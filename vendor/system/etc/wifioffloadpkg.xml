@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WifiOffload>
+	<BlackList>
+		<Package>com.htc.launcher</Package>
+		<Package>com.htc.calendar</Package>
+		<Package>com.htc.android.worldclock</Package>
+		<Package>com.htc.dockmode</Package>
+		<Package>com.htc.android.ssdtest</Package>
+		<Package>com.htc.vvm.vzw</Package>
+		<Package>com.htc.contacts</Package>
+		<Package>com.android.settings</Package>
+		<Package>com.htc.android.htcsetupwizard</Package>
+		<Package>com.htc.soundrecorder</Package>
+		<Package>com.android.phone</Package>
+		<Package>com.htc.tetheringguard</Package>
+		<Package>com.vzw.hss.myverizon</Package>
+		<Package>com.vzw.hs.android.modlite</Package>
+		<Package>com.vzw.accessories</Package>
+		<Package>com.htc.album</Package>
+		<Package>com.htc.music</Package>
+		<Package>com.htc.sdm</Package>
+		<Package>com.htc.HTCSpeaker</Package>
+		<Package>com.google.android.apps.maps</Package>
+		<Package>com.cequint.ecid</Package>
+		<Package>com.android.bluetooth</Package>
+		<Package>com.redbend.vdmc</Package>
+		<Package>com.google.android.voicesearch</Package>
+		<Package>com.htc.android.epst</Package>
+		<Package>com.htc.android.fieldtrial</Package>
+		<Package>com.htc.video</Package>
+		<Package>com.infraware.docmaster</Package>
+		<Package>com.google.android.music</Package>
+		<Package>com.htc.showme</Package>
+		<Package>com.htc.dnatransfer</Package>
+		<Package>com.vznavigator.Generic</Package>
+		<Package>com.gotv.nflgamecenter.us.lite</Package>
+		<Package>com.htc.camera</Package>
+		<Package>com.htc.sense.ime</Package>
+		<Package>com.htc.sense.mms</Package>
+	</BlackList>
+
+	<WhiteList>
+	</WhiteList>
+</WifiOffload>

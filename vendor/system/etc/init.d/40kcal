@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+insmod /system/lib/modules/mdss_mdp_kcal_ctrl.ko
+
+

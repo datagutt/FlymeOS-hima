@@ -1,0 +1,9 @@
+#!/system/bin/sh
+# LeeDrOiD
+#Tweaks & Optimizations by LeeDrOiD
+
+
+
+#Handled in usf_post_boot
+
+echo "   ~ LeeDrOiD Tweaks Applied ~  ";

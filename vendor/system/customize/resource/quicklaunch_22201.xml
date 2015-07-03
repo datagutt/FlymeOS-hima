@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<quickLaunch>
+  <set name="default">
+    <item type="application" packageName="com.htc.contacts" className="com.htc.contacts.DialerTabActivity" position="0" container="-101" />
+    <item type="application" packageName="com.htc.sense.mms" className="com.htc.sense.mms.ui.ConversationList" position="1" container="-101" />
+    <item type="application" packageName="com.htc.camera" className="com.htc.camera.CameraEntry" position="4" container="-101" />
+    <item type="application" packageName="com.android.chrome" className="com.google.android.apps.chrome.Main" position="3" container="-101" />
+  </set>
+</quickLaunch>

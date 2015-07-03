@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<allApplication>
+  <customize_sort>
+    <item type="folder" folder_id="Media" folder_title="Media" display_order="6" />
+    <item type="folder" folder_id="Google" folder_title="Google" display_order="7" />
+    <item type="folder" folder_id="Tools" folder_title="Tools" display_order="18" />
+    <item type="folder" folder_id="Productivity" folder_title="Productivity" display_order="16" />
+    <item type="application" packageName="com.htc.android.mail" className="com.htc.android.mail.MultipleActivitiesMain" display_order="0" />
+    <item type="application" packageName="com.htc.calendar" className="com.htc.calendar.CalendarActivityMain" display_order="1" />
+    <item type="application" packageName="com.google.android.apps.maps" className="com.google.android.maps.MapsActivity" display_order="2" />
+    <item type="application" packageName="com.htc.album" className="com.htc.album.AlbumMain.ActivityMainTabHost" display_order="4" />
+    <item type="application" packageName="com.htc.zero" className="com.htc.zero.activity.ZeroMainActivity" display_order="5" />
+    <item type="application" packageName="com.htc.camera" className="com.htc.camera.CameraEntry" display_order="0" container="Media" />
+    <item type="application" packageName="com.htc.music" className="com.htc.music.browserlayer.MusicBrowserTabActivity" display_order="1" container="Media" />
+    <item type="application" packageName="com.htc.fm" className="com.htc.fm.ap.activity.FMRadioMain" display_order="2" container="Media" />
+    <item type="application" packageName="uk.co.sevendigital.android" className="uk.co.sevendigital.android.library.ui.SDIStartActivity" display_order="6" container="Media" />
+    <item type="application" packageName="com.skysoft.kkbox.android" className="com.skysoft.kkbox.android.HomeActivity" display_order="7" container="Media" />
+    <item type="application" packageName="com.kkbox.alc.android" className="com.kkbox.alc.android.tab.MainTab" display_order="8" container="Media" />
+    <item type="application" packageName="com.google.android.gm" className="com.google.android.gm.ConversationListActivityGmail" display_order="2" container="Google" />
+    <item type="application" packageName="com.google.android.apps.plus" className="com.google.android.apps.plus.phone.HomeActivity" display_order="3" container="Google" />
+    <item type="application" packageName="com.facebook.katana" className="com.facebook.katana.LoginActivity" display_order="8" />
+    <item type="application" packageName="com.htc.AutoMotive" className="com.htc.AutoMotive.carousel.MainActivity" display_order="10" />
+    <item type="application" packageName="com.htc.android.worldclock" className="com.htc.android.worldclock.WorldClockTabControl" display_order="11" />
+    <item type="application" packageName="com.zoodles.kidmode" className="com.zoodles.kidmode.KidModeStub" display_order="13" />
+    <item type="application" packageName="com.htc.contacts" className="com.htc.contacts.BrowseLayerCarouselActivity" display_order="14" />
+    <item type="application" packageName="com.android.vending" className="com.android.vending.AssetBrowserActivity" display_order="15" />
+    <item type="application" packageName="com.htc.lucy" className="com.htc.lucy.editor.LandingActivity" display_order="0" container="Productivity" />
+    <item type="application" packageName="com.htc.contacts" className="com.htc.contacts.DialerTabActivity" display_order="1" container="Productivity" />
+    <item type="application" packageName="com.htc.sense.mms" className="com.htc.sense.mms.ui.ConversationList" display_order="2" container="Productivity" />
+    <item type="application" packageName="com.infraware.docmaster" className="com.infraware.polarisoffice5.OfficeHomeActivity" display_order="3" container="Productivity" />
+    <item type="application" packageName="com.htc.sense.browser" className="com.htc.sense.browser.BrowserActivity" display_order="4" container="Productivity" />
+    <item type="application" packageName="com.htc.task" className="com.htc.task.TaskListViewActivity" display_order="7" container="Productivity" />
+    <item type="application" packageName="com.inventec.dreye.htc" className="com.inventec.dreye.htc.DreEntryView" display_order="8" container="Productivity" />
+    <item type="application" packageName="com.android.settings" className="com.android.settings.Settings" display_order="17" />
+    <item type="application" packageName="com.android.calculator2" className="com.android.calculator2.Calculator" display_order="0" container="Tools" />
+    <item type="application" packageName="com.htc.Weather" className="com.htc.Weather.WeatherEntry" display_order="1" container="Tools" />
+    <item type="application" packageName="com.android.providers.downloads.ui" className="com.android.providers.downloads.ui.DownloadList" display_order="2" container="Tools" />
+    <item type="application" packageName="com.htc.android.htcsetupwizard" className="com.htc.android.htcsetupwizard.SetupWizardActivity" display_order="3" container="Tools" />
+    <item type="application" packageName="com.zoodles.kidmode" className="com.zoodles.kidmode.activity.parent.ParentDashboardLauncherActivity" display_order="7" container="Tools" />
+    <item type="application" packageName="com.htc.soundrecorder" className="com.htc.soundrecorder.SoundRecorderBG" display_order="4" container="Tools" />
+    <item type="application" packageName="com.twitter.android" className="com.twitter.android.StartActivity" display_order="9" />
+    <item type="application" packageName="com.android.chrome" className="com.google.android.apps.chrome.Main" display_order="12" />
+    <item type="application" packageName="com.google.android.youtube" className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity" display_order="21" />
+    <item type="application" packageName="com.google.android.googlequicksearchbox" className="com.google.android.googlequicksearchbox.SearchActivity" display_order="0" container="Google" />
+    <item type="application" packageName="com.google.android.googlequicksearchbox" className="com.google.android.googlequicksearchbox.VoiceSearchActivity" display_order="1" container="Google" />
+    <item type="application" packageName="com.google.android.music" className="com.android.music.activitymanagement.TopLevelActivity" display_order="4" container="Google" />
+    <item type="application" packageName="com.google.android.videos" className="com.google.android.youtube.videos.EntryPoint" display_order="5" container="Google" />
+    <item type="application" packageName="com.google.android.apps.books" className="com.google.android.apps.books.app.BooksActivity" display_order="6" container="Google" />
+    <item type="application" packageName="com.google.android.apps.magazines" className="com.google.apps.dots.android.app.activity.CurrentsStartActivity" display_order="7" container="Google" />
+    <item type="application" packageName="com.google.android.play.games" className="com.google.android.gms.games.ui.destination.main.MainActivity" display_order="8" container="Google" />
+    <item type="application" packageName="com.google.android.apps.docs" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="9" container="Google" />
+    <item type="application" packageName="com.google.android.apps.plus" className="com.google.android.apps.plus.phone.ConversationListActivity" display_order="10" container="Google" />
+    <item type="application" packageName="com.google.android.talk" className="com.google.android.talk.SigningInActivity" display_order="11" container="Google" />
+    <item type="application" packageName="com.google.android.gms" className="com.google.android.gms.app.settings.GoogleSettingsActivity" display_order="12" container="Google" />
+    <item type="application" packageName="com.google.android.apps.docs.editors.docs" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="13" container="Google" />
+    <item type="application" packageName="com.google.android.apps.docs.editors.slides" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="14" container="Google" />
+    <item type="application" packageName="com.google.android.apps.docs.editors.sheets" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="15" container="Google" />
+    <item type="application" packageName="com.htc.updater" className="com.htc.updater.ui.UpdaterMainActivity" display_order="9" container="Tools" />
+    <item type="application" packageName="com.htc.backup" className="com.htc.backup.oobe.Launcher" display_order="5" container="Tools" />
+    <item type="application" packageName="com.htc.launcher" className="com.htc.themepicker.AssetBrowsingActivity" display_order="3" />
+    <item type="application" packageName="com.htc.community" className="com.htc.community.MainActivity" display_order="19" />
+    <item type="application" packageName="com.htc.guide" className="com.htc.guide.MainActivity" display_order="20" />
+    <item type="application" packageName="com.htc.album" className="com.htc.photoenhancer.LandingPage" display_order="3" container="Media" />
+    <item type="application" packageName="com.aiqidii.mercury" className="com.aiqidii.mercury.ui.MainActivity" display_order="4" container="Media" />
+    <item type="application" packageName="com.melodis.midomiMusicIdentifier.freemium" className="com.soundhound.android.appcommon.activity.SoundHound" display_order="5" container="Media" />
+    <item type="application" packageName="com.htc.filemanager" className="com.htc.filemanager.FileManagerActivity" display_order="5" container="Productivity" />
+    <item type="application" packageName="com.skype.raider" className="com.skype.raider.Main" display_order="6" container="Productivity" />
+    <item type="application" packageName="com.htc.dotmatrix" className="com.htc.dotmatrix.ui.DotViewSettingActivity" display_order="6" container="Tools" />
+    <item type="application" packageName="com.htc.flashlight" className="com.htc.flashlight.FlashlightActivity" display_order="8" container="Tools" />
+  </customize_sort>
+</allApplication>

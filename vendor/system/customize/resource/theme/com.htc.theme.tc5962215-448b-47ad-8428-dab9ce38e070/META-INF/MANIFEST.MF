@@ -1,0 +1,5 @@
+Manifest-Version: 1.0.0
+Created-By: HTC Theme Maker
+Theme-Id: com.htc.theme.tc5962215-448b-47ad-8428-dab9ce38e070
+Theme-Density: xxhdpi
+

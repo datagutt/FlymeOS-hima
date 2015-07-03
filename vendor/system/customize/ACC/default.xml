@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configurations>
+<app name="Android_App_Framework">
+  <item type="string-array" name="AMS_feature_FirstBackgroundProcess_white_list">
+    <string>android.process.acore</string>
+  </item>
+  <item type="string-array" name="AMS_feature_QuickBoot_white_list">
+    <string>system</string>
+    <string>com.android.phone</string>
+    <string>com.htc.launcher</string>
+    <string>com.android.nfc</string>
+    <string>com.android.systemui</string>
+    <string>android.process.acore</string>
+    <string>com.android.htcdialer</string>
+    <string>com.htc.usertrialfeedback</string>
+    <string>com.android.smith</string>
+    <string>com.google.android.apps.uploader</string>
+    <string>com.google.process.gapps</string>
+    <string>com.htc.htcdialer</string>
+  </item>
+  <item type="integer" name="AMS_feature_recentApp_MaxRecentTasks">20</item>
+  <item type="integer" name="AMS_feature_recentApp_MaxVisibleTasks">9</item>
+  <item type="string-array" name="AppOps_feature_hint_app_whitelist">
+    <string>com.android.cts.stub</string>
+    <string>com.htc.AndroidTestII</string>
+    <string>com.android.CSDFunctionR</string>
+    <string>com.htc.CSDFunctionR</string>
+  </item>
+  <item type="boolean" name="AppUsageStats_feature_AutoEnableWifi_when_launch">false</item>
+  <item type="boolean" name="camkey_wakescreen">true</item>
+  <item type="boolean" name="disable_screenshot">false</item>
+  <item type="boolean" name="enable_gesture_service">true</item>
+  <item type="boolean" name="idda_keyfeatures">false</item>
+  <item type="integer" name="marketapp_touchslop">16</item>
+  <item type="boolean" name="NMS_feature_flashlight_during_charging">true</item>
+  <item type="integer" name="NMS_feature_led_flash_timeout">0</item>
+  <item type="boolean" name="NMS_feature_tri_color_led">false</item>
+  <item type="boolean" name="powerkey_answer_phone">false</item>
+  <item type="boolean" name="quicklaunch_flashlight">false</item>
+  <item type="boolean" name="support_glovemode">true</item>
+</app>
+<app name="Android_Core_Framework">
+  <item type="boolean" name="battery_cancel_wireless_charging_alert_dialog_by_timeout">false</item>
+  <item type="boolean" name="battery_show_unsupported_charger_dialog">false</item>
+  <item type="boolean" name="battery_stop_low_battery_tone_after_1sec">false</item>
+  <item type="boolean" name="battery_use_another_low_battery_condition">false</item>
+  <item type="integer" name="boot_music_default_volume">3</item>
+  <item type="integer" name="device_root_monitor_report_period">0</item>
+  <item type="boolean" name="devicepolicy_factory_restriction">false</item>
+  <item type="boolean" name="devicepolicy_has_mdm_api_phase_2">true</item>
+  <item type="boolean" name="devicepolicy_lower_fp_quality">false</item>
+  <item type="integer" name="devicepolicy_max_fail_passwords_for_wipe">0</item>
+  <item type="boolean" name="devicepolicy_wipe_external_storage">false</item>
+  <item type="integer" name="fp_security_level">5000</item>
+  <item type="boolean" name="globalaction_enable_cancel_button">false</item>
+  <item type="boolean" name="htcangledetector_is_angle_detector_enable">false</item>
+  <item type="boolean" name="htcangledetector_is_detector_always_enable">false</item>
+  <item type="boolean" name="htcangledetector_is_enable_detector_gyro">false</item>
+  <item type="boolean" name="keyguard_locknow_when_sim_absent">false</item>
+  <item type="boolean" name="keyguard_no_puk_screen">false</item>
+  <item type="boolean" name="keyguard_stuck_network_lock">false</item>
+  <item type="boolean" name="location_nlp_DynamicChange">false</item>
+  <item type="integer" name="nfc_boot_delay_timeout">0</item>
+  <item type="integer" name="nfc_card_mode_rounting_by_screen_state">1</item>
+  <item type="integer" name="nfc_default_enable_card_mode">2</item>
+  <item type="integer" name="nfc_default_on">2</item>
+  <item type="integer" name="nfc_default_protocol_route">2</item>
+  <item type="integer" name="nfc_default_value">0</item>
+  <item type="boolean" name="nfc_disable_hce_when_no_hostpaymentap">false</item>
+  <item type="boolean" name="nfc_disable_p2p_rw_during_phonecall">false</item>
+  <item type="string-array" name="nfc_enable_prompt_whitelist">
+  </item>
+  <item type="integer" name="nfc_evt_transaction_behavior">2</item>
+  <item type="integer" name="nfc_force_delay_for_enabling">0</item>
+  <item type="string-array" name="nfc_htc_test_apps">
+    <string>com.htc.android.ssdtest</string>
+    <string>com.htc.CSDFunctionR</string>
+    <string>com.android.CSDFunctionR</string>
+    <string>com.htc.AndroidTestII</string>
+  </item>
+  <item type="boolean" name="nfc_ndef_push_setting">true</item>
+  <item type="boolean" name="nfc_parse_atr_for_swp_init">false</item>
+  <item type="integer" name="nfc_show_icon">0</item>
+  <item type="integer" name="nfc_support_nfc_lock">0</item>
+  <item type="integer" name="nfc_user_prompt">0</item>
+  <item type="integer" name="pkg_enable_hwacc">2</item>
+  <item type="string-array" name="pkg_sys_prop_whitelist">
+    <string>com.android.cts.stub</string>
+    <string>android.tests.devicesetup</string>
+    <string>com.android.cts.os</string>
+    <string>com.htc.commoncontrol.demo</string>
+    <string>com.android.gpstool</string>
+    <string>com.htc.AndroidTestII</string>
+    <string>com.android.smith</string>
+    <string>com.htc.android.qxdm2sd</string>
+    <string>com.htc.android.htcloglevel</string>
+    <string>com.htc.android.ramdump</string>
+    <string>com.htc.android.netlogger</string>
+    <string>com.htc.android.storageeater</string>
+    <string>com.htc.android.uniat</string>
+    <string>com.htc.android.atrouterqmi</string>
+    <string>com.htc.android.rxdtestqmi</string>
+    <string>com.htc.android.malogger</string>
+    <string>com.htc.android.viamodemlogger</string>
+    <string>com.vodafone.vodafone360updates</string>
+    <string>com.reefs</string>
+    <string>com.reefs.debug</string>
+  </item>
+  <item type="integer" name="se_system_properties_for_project">0</item>
+  <item type="boolean" name="shutdown_stop_zchgd_onmode">false</item>
+  <item type="integer" name="shutdown_vibrate_ms">0</item>
+  <item type="boolean" name="storage_has_lmw">true</item>
+  <item type="boolean" name="support_abt_feature">false</item>
+  <item type="integer-array" name="support_battery_overheat_degree">
+    <int>500</int>
+    <int>450</int>
+    <int>660</int>
+  </item>
+  <item type="boolean" name="support_battery_overheat_notify">false</item>
+  <item type="boolean" name="support_cpu_overheat_notify">false</item>
+  <item type="boolean" name="support_sd_tray_state">false</item>
+  <item type="boolean" name="supportServo">false</item>
+  <item type="boolean" name="sync_autosync_default">true</item>
+  <item type="boolean" name="uimode_keep_screenon_when_charging">true</item>
+  <item type="integer" name="wirelss_disp_notification_mode">0</item>
+</app>
+<app name="Android_Kernel">
+  <item type="boolean" name="support_dynamic_switch">false</item>
+  <item type="boolean" name="support_extension_api">false</item>
+  <item type="boolean" name="support_mount_iso_on_boot">false</item>
+</app>
+<app name="Android_MLHD">
+  <item type="string" name="CustomizeMLHDName">none</item>
+  <item type="boolean" name="notSupportConcurrent">false</item>
+  <item type="boolean" name="onlySupportDLNA">false</item>
+  <item type="boolean" name="supportMLHD">false</item>
+</app>
+<app name="Android_Multimedia">
+  <item type="integer" name="effect_manager_id">-1</item>
+  <item type="integer" name="has_default_alarm_volume">6</item>
+  <item type="integer" name="has_default_media_headset_volume">7</item>
+  <item type="integer" name="has_default_media_speaker_volume">10</item>
+  <item type="integer" name="has_default_ringtone_volume">5</item>
+  <item type="boolean" name="spport_screen_light">false</item>
+  <item type="boolean" name="support_a2dp_safevolume">false</item>
+  <item type="boolean" name="support_camera_enforce_shuttersound">false</item>
+  <item type="boolean" name="support_customer_proxy">false</item>
+  <item type="boolean" name="support_customization_fallback">false</item>
+  <item type="boolean" name="support_harman">false</item>
+  <item type="boolean" name="support_miit_request">false</item>
+  <item type="boolean" name="support_music_ringtone">true</item>
+  <item type="boolean" name="support_outdoor_mode">false</item>
+  <item type="boolean" name="support_qcelp">false</item>
+  <item type="boolean" name="support_theater_effect_logo">false</item>
+  <item type="integer" name="use_ringtone_for_notification">1</item>
+</app>
+<app name="Android_Networking">
+  <item type="boolean" name="cne_enable">false</item>
+  <item type="integer" name="CustomizeMobileCharge">0</item>
+  <item type="boolean" name="default_dns_server">true</item>
+  <item type="boolean" name="entitlement_check">false</item>
+  <item type="boolean" name="forceSignatureMatch">false</item>
+  <item type="integer" name="ipv6_tethering">7</item>
+  <item type="boolean" name="isPrepareVPN">false</item>
+  <item type="boolean" name="isTetherBlockCheck">false</item>
+  <item type="string" name="multiCastFilter">239.255.255.255/32</item>
+  <item type="boolean" name="notifyWifiDisconnect">false</item>
+  <item type="boolean" name="notSetDefaultDNS">false</item>
+  <item type="boolean" name="notSetHostName">false</item>
+  <item type="boolean" name="skipTypeCheck">false</item>
+  <item type="boolean" name="specialSignatureMatchReq">false</item>
+  <item type="boolean" name="tether_use_default_upstream">false</item>
+  <item type="boolean" name="tethering_guard_support">false</item>
+  <item type="boolean" name="tethering_roaming_specific">false</item>
+  <item type="string" name="tethering_specific">NONE</item>
+  <item type="string" name="usageCustomerWhiteList">com.htc.android.mail;com.orangelabs.rcs</item>
+  <item type="boolean" name="use_default_apn">false</item>
+</app>
+<app name="Android_Ril">
+  <item type="boolean" name="allow_national_roaming">true</item>
+  <item type="boolean" name="block_DCTretry_when_temporary_fail">false</item>
+  <item type="boolean" name="cdma_lte_mm_config">false</item>
+  <item type="boolean" name="check_apn_records_when_roaming_on_off">false</item>
+  <item type="string" name="customer_mcc_mnc_list"></item>
+  <item type="integer" name="customize_cdma_lte_profile">0</item>
+  <item type="string" name="customize_error_cause_list"></item>
+  <item type="string" name="data_retry_config"></item>
+  <item type="boolean" name="dual_sim_single_data_capable">false</item>
+  <item type="string" name="filter_apn_type_list"></item>
+  <item type="string" name="fixed_apn_for_dun"></item>
+  <item type="boolean" name="global_roaming_config">false</item>
+  <item type="string" name="ignore_dns_check_mcc_list">460</item>
+  <item type="boolean" name="isSingleSimDualSignalTdscdma">false</item>
+  <item type="string" name="modemSolution"></item>
+  <item type="string" name="national_roaming_mccmnc_list">42507|21902|26006:26001,26002,26003|23420|27205|22299|24002|23210|23205|23806|23430|23408</item>
+  <item type="integer" name="pdplimit_policy">2</item>
+  <item type="string" name="prefer_specific_network_types">mms</item>
+  <item type="boolean" name="reset_retry_counter_screen_on">false</item>
+  <item type="boolean" name="roaming_enhance_config">false</item>
+  <item type="boolean" name="set_preferred_apn_by_default">false</item>
+  <item type="boolean" name="skip_generic_roaming_guard">false</item>
+  <item type="boolean" name="support_eu_data_roaming">false</item>
+  <item type="boolean" name="support_fixed_cdma_dns">false</item>
+  <item type="boolean" name="support_ril_phonemode_change_for_td">false</item>
+  <item type="boolean" name="support_ril_send_ims_gsm_sms">false</item>
+  <item type="boolean" name="support_ril_send_long_sms">false</item>
+  <item type="boolean" name="support_ril_socket_reset">true</item>
+  <item type="boolean" name="support_ril_subsidy_lock">false</item>
+  <item type="integer" name="support_ril_type">2</item>
+  <item type="boolean" name="swap_apn_setting_when_roaming">false</item>
+  <item type="boolean" name="turnoff_lte_when_mobile_off">false</item>
+  <item type="string" name="umts_update_profile_action_policy">4,3;0,0</item>
+  <item type="string" name="umts_update_profile_slot_policy">10</item>
+  <item type="boolean" name="use_default_profile_for_tethering">true</item>
+</app>
+<app name="Android_Telephony">
+  <item type="boolean" name="access_UICC_in_flight_mode">false</item>
+  <item type="boolean" name="apply_new_1x_evdo_signal_mapping">false</item>
+  <item type="boolean" name="apply_old_signal_mapping">false</item>
+  <item type="boolean" name="avoid_auto_change_audio_path">false</item>
+  <item type="integer" name="build_account_main_flag">0</item>
+  <item type="boolean" name="build_main_phone_type_CDMA">false</item>
+  <item type="boolean" name="build_main_phone_type_GSM">false</item>
+  <item type="boolean" name="build_main_phone_type_SubGSM">false</item>
+  <item type="integer" name="build_phone_feature_stand_by">0</item>
+  <item type="boolean" name="cat_ap_support_bip">false</item>
+  <item type="boolean" name="cat_sub_address">true</item>
+  <item type="boolean" name="cdma_acg_for_lra">false</item>
+  <item type="string-array" name="cdma_adc_list">
+  </item>
+  <item type="string-array" name="cdma_adc_list_chameleon">
+  </item>
+  <item type="boolean" name="cdma_append_operator_numeric">false</item>
+  <item type="boolean" name="cdma_camp_on_disable_auto_time">false</item>
+  <item type="string-array" name="cdma_customer_sim_mcc_mnc_list">
+  </item>
+  <item type="boolean" name="cdma_disable_nv_cdma_if_no_uicc_lte">false</item>
+  <item type="integer" name="cdma_eri_call_guard">-1</item>
+  <item type="boolean" name="cdma_get_opname_from_eri_for_nv_sub_source">false</item>
+  <item type="boolean" name="cdma_get_vm_number_by_nv_carrier_id">false</item>
+  <item type="boolean" name="cdma_null_mdn_min_if_ruim_not_provision">false</item>
+  <item type="boolean" name="cdma_report_imsi_from_usim">false</item>
+  <item type="boolean" name="cdma_set_default_icc_op_numeric">true</item>
+  <item type="boolean" name="cdma_set_default_vm_number_as_mdn">false</item>
+  <item type="boolean" name="cdma_set_ota_provision_req_property_on_nv_ready">false</item>
+  <item type="boolean" name="cdma_store_vm_number_on_usim">false</item>
+  <item type="boolean" name="cdma_support_sf_euimid">false</item>
+  <item type="boolean" name="cdma_telephony_chameleon">false</item>
+  <item type="string" name="cdma_vm_number"></item>
+  <item type="boolean" name="config_trust_zone_supported">true</item>
+  <item type="boolean" name="csg_feature_enable">false</item>
+  <item type="string" name="customer_ca_bandwidth"></item>
+  <item type="string" name="customer_sim_mccmnc_data">10,310120,316010;</item>
+  <item type="boolean" name="delay_to_reset_network">false</item>
+  <item type="boolean" name="is_cdma_sim_locked">false</item>
+  <item type="boolean" name="is_qct_with_single_active">false</item>
+  <item type="boolean" name="is_slot2_sprd_modem">false</item>
+  <item type="boolean" name="isSupportTDandWCDMAModeChange">false</item>
+  <item type="boolean" name="popup_dualsetting_manager_for_china_cdma_vender">false</item>
+  <item type="boolean" name="popup_dualsetting_manager_for_china_gsm_vender">false</item>
+  <item type="boolean" name="query_ota_provision_status_after_sim_ready">false</item>
+  <item type="boolean" name="set_mode_before_answer">false</item>
+  <item type="boolean" name="show_1_imei">false</item>
+  <item type="integer" name="signal_icon_level_cdma">5</item>
+  <item type="integer" name="signal_icon_level_gsm">5</item>
+  <item type="boolean" name="sim_card_proxy">false</item>
+  <item type="boolean" name="sim_hot_swap">true</item>
+  <item type="boolean" name="sim_phonebook">true</item>
+  <item type="boolean" name="sim_phonebook_by_icc_io">false</item>
+  <item type="boolean" name="support_audio_path_for_td_modem">false</item>
+  <item type="boolean" name="support_loop_back_mode_testing">false</item>
+  <item type="boolean" name="support_lte_on_gsm_for_wphone">false</item>
+  <item type="boolean" name="support_qct_vowifi">false</item>
+  <item type="boolean" name="support_td_mode_for_roaming">false</item>
+  <item type="boolean" name="support_td_w_modem_mode_change">false</item>
+  <item type="boolean" name="support_two_hold_one_active_call">false</item>
+  <item type="boolean" name="support_voice_speech_codec">false</item>
+  <item type="boolean" name="supportSeparateOperatorInfo">false</item>
+  <item type="boolean" name="sync_other_radio">false</item>
+  <item type="boolean" name="uicc_icon">false</item>
+  <item type="boolean" name="use_old_signal_mapping_rule">false</item>
+</app>
+<app name="Android_TelephonyMessage">
+  <item type="boolean" name="framework_mms_is_support_mms">true</item>
+  <item type="string" name="telephony_sms_default_sms_ap"></item>
+  <item type="string" name="telephony_sms_email_gateway_number">NA</item>
+  <item type="boolean" name="telephony_sms_is_check_ruim_record_length">false</item>
+  <item type="boolean" name="telephony_sms_is_support_c9_mo_format">false</item>
+  <item type="boolean" name="telephony_sms_is_support_cmas_exercise_alert">false</item>
+  <item type="boolean" name="telephony_sms_is_support_gep_app">false</item>
+  <item type="boolean" name="telephony_sms_is_support_ims_sms">false</item>
+  <item type="boolean" name="telephony_sms_is_support_new_cmas_channel_range">false</item>
+  <item type="boolean" name="telephony_sms_is_support_premium_sms">true</item>
+  <item type="boolean" name="telephony_sms_is_support_relative_validity_period">false</item>
+  <item type="boolean" name="telephony_sms_is_support_reset_voice_mail_count">false</item>
+  <item type="boolean" name="telephony_sms_is_support_s5_duplicate_cmas_detection">false</item>
+  <item type="boolean" name="telephony_sms_is_support_s5_mt_sms_in_ecm_mode">false</item>
+  <item type="boolean" name="telephony_sms_is_support_s5_reassemble_sms">false</item>
+  <item type="boolean" name="telephony_sms_is_support_s5_segment_indicator">false</item>
+  <item type="string-array" name="telephony_sms_operator_define_sms_short_code">
+  </item>
+  <item type="boolean" name="telephony_sms_tencent_security_manager">false</item>
+</app>
+<app name="Android_Video_Codec">
+  <item type="boolean" name="support_chromecast_mirror">true</item>
+  <item type="boolean" name="support_miracast">true</item>
+</app>
+<app name="Android_Wifi">
+  <item type="boolean" name="has_cw">false</item>
+  <item type="boolean" name="is_tmous_sku">false</item>
+  <item type="boolean" name="support_associate_manual">false</item>
+  <item type="boolean" name="support_dockwifi">false</item>
+  <item type="boolean" name="support_dualband">true</item>
+  <item type="boolean" name="support_miracast">true</item>
+  <item type="boolean" name="support_network_selection">true</item>
+  <item type="boolean" name="support_p2p_concurrent">true</item>
+  <item type="integer" name="wlan_authentication_error_retry">5</item>
+  <item type="boolean" name="wlan_blist_filter">false</item>
+  <item type="boolean" name="wlan_check_old_dongle">false</item>
+  <item type="boolean" name="wlan_disablenetwork_forcibly">false</item>
+  <item type="string" name="wlan_dns_address_for_wandetection">www.google.com</item>
+  <item type="boolean" name="wlan_hotspot_has_imei">false</item>
+  <item type="boolean" name="wlan_hotspot_has_mdn">false</item>
+  <item type="integer" name="wlan_hotspot_password_count">13</item>
+  <item type="boolean" name="wlan_hotspot_password_encryption">false</item>
+  <item type="integer" name="wlan_hotspot_remind">1</item>
+  <item type="string" name="wlan_hotspot_security_type">wpa2-psk</item>
+  <item type="string" name="wlan_hotspot_start_ip">192.168.1.10</item>
+  <item type="integer" name="wlan_notification_eapaka">1</item>
+  <item type="integer" name="wlan_preconfig">1</item>
+  <item type="boolean" name="wlan_securenetwork_notification">false</item>
+  <item type="boolean" name="wlan_security_openlast">false</item>
+  <item type="integer" name="wlan_setnotification">1</item>
+  <item type="integer" name="wlan_solution">1</item>
+  <item type="boolean" name="wlan_support_5g_hotspot">true</item>
+  <item type="boolean" name="wlan_support_apsta">true</item>
+  <item type="integer" name="wlan_wan_detection_type">1</item>
+  <item type="boolean" name="wlan_wifi_aggregation">false</item>
+  <item type="integer" name="wlan_wifi_status">1</item>
+  <item type="boolean" name="wlan_wifioffload_enable">false</item>
+</app>
+<app name="AT+T_Address_Book">
+  <item type="integer" name="aab_version">31</item>
+</app>
+<app name="Automotive_Home">
+  <item type="integer" name="GPS_Icon_Style">0</item>
+  <item type="boolean" name="Hide_Car_AutoLaunch_Option">false</item>
+  <item type="boolean" name="Skip_HoldWakelock">false</item>
+</app>
+<app name="Bluetooth">
+  <item type="boolean" name="bluetooth_bldn_last_dial_number">false</item>
+  <item type="integer" name="pref_lock">0</item>
+</app>
+<app name="Calendar">
+  <item type="integer" name="calendar_event_max_description_length">100000</item>
+  <item type="boolean" name="increase_notification_sound">false</item>
+</app>
+<app name="Camera">
+  <item type="integer" name="burst_shot_count">99</item>
+  <item type="boolean" name="can_enable_auto_capture">true</item>
+  <item type="boolean" name="can_enable_human_joint">true</item>
+  <item type="boolean" name="can_enable_split_capture">true</item>
+  <item type="boolean" name="can_enable_voice_capture">true</item>
+  <item type="boolean" name="can_enable_zoe">true</item>
+  <item type="integer" name="feature_version">8714</item>
+  <item type="boolean" name="force_3d_preview_rendering">false</item>
+  <item type="string" name="frontcamera_position">Right</item>
+  <item type="boolean" name="grant_auto_selfi_enabled">true</item>
+  <item type="boolean" name="grant_crop_me_in_enabled">true</item>
+  <item type="boolean" name="grant_photobooth_enabled">true</item>
+  <item type="boolean" name="grant_split_capture_enabled">true</item>
+  <item type="boolean" name="grant_voice_capture_enabled">true</item>
+  <item type="boolean" name="has_manual_capture">true</item>
+  <item type="boolean" name="has_panorama_plus">true</item>
+  <item type="boolean" name="has_systembar">true</item>
+  <item type="boolean" name="is_low_end_device">false</item>
+  <item type="boolean" name="is_simcard_state_monitor_needed">false</item>
+  <item type="boolean" name="is_vga_front_cam">false</item>
+  <item type="boolean" name="support_front_cam_led_countdown">true</item>
+  <item type="boolean" name="support_panorama">true</item>
+  <item type="boolean" name="support_same_features_for_all_cameras">false</item>
+  <item type="boolean" name="support_stereo_record">true</item>
+  <item type="boolean" name="supportZoeInVideoCapture">false</item>
+</app>
+<app name="Camera_China_Sina">
+  <item type="integer" name="burst_shot_count">99</item>
+  <item type="string" name="frontcamera_position">Right</item>
+  <item type="string" name="gyro_cutoff">2.5</item>
+  <item type="string" name="gyro_scale">0.98</item>
+  <item type="boolean" name="has_panorama_plus">true</item>
+  <item type="boolean" name="has_systembar">false</item>
+  <item type="boolean" name="is_low_end_device">false</item>
+  <item type="boolean" name="is_simcard_state_monitor_needed">false</item>
+  <item type="boolean" name="is_vga_front_cam">false</item>
+  <item type="boolean" name="support_panorama">true</item>
+  <item type="boolean" name="support_stereo_record">true</item>
+</app>
+<app name="Device_Wipe">
+  <item type="boolean" name="Enabled_ADW">false</item>
+</app>
+<app name="DeviceManagement">
+  <item type="string" name="base_uri">https://dm.htcsense.com</item>
+  <item type="string" name="deviceManifest_path">/{platform}/devices/manifest</item>
+  <item type="string" name="deviceManifest_uri"></item>
+  <item type="string-array" name="test_pkgnames">
+    <string>com.htc.cs.dm</string>
+    <string>com.htc.cs.dm.inspector</string>
+  </item>
+</app>
+<app name="DockMode">
+  <item type="boolean" name="dock_screen_orientation_landscape">false</item>
+</app>
+<app name="Dot_Matrix">
+  <item type="integer" name="call_timer_style">0</item>
+  <item type="boolean" name="remove_arrow_animations">false</item>
+  <item type="integer" name="support_cover_type">0</item>
+  <item type="boolean" name="support_last_call_ui">true</item>
+</app>
+<app name="Download_Manager">
+  <item type="boolean" name="download_fota_ctwap">false</item>
+</app>
+<app name="DownloadProvider">
+  <item type="boolean" name="download_perf_enhancement">false</item>
+  <item type="boolean" name="skip_default_proxy">false</item>
+  <item type="boolean" name="switch_apn">true</item>
+</app>
+<app name="EasyAccessService">
+  <item type="boolean" name="HTC_By_Pass_ACTION">false</item>
+  <item type="integer" name="HTC_DOUBLE_TAP_ACTION">3</item>
+  <item type="boolean" name="htc_easy_access_feature_down">false</item>
+  <item type="boolean" name="HTC_QUICK_CALL_ACTION">false</item>
+  <item type="integer" name="HTC_SWIPE_LEFT_ACTION">2</item>
+  <item type="integer" name="HTC_SWIPE_RIGHT_ACTION">2</item>
+  <item type="integer" name="HTC_SWIPE_UP_ACTION">3</item>
+  <item type="integer" name="HTC_VOLUME_BUTTON_ACTION">0</item>
+</app>
+<app name="HTCAlbum">
+  <item type="boolean" name="disable_zoe_harry_porter_effect">false</item>
+</app>
+<app name="HTCCommonControl">
+  <item type="string-array" name="htcsharevia_default_order">
+    <string>;</string>
+    <string>com.htc.lucy</string>
+    <string>com.htc.cloudstorage.skydrive</string>
+    <string>com.dropbox.android</string>
+    <string>com.google.android.apps.docs</string>
+    <string>com.htc.android.mail</string>
+    <string>com.htc.sense.mms</string>
+    <string>com.facebook.katana</string>
+    <string>com.htc.zero</string>
+  </item>
+</app>
+<app name="HtcContacts">
+  <item type="boolean" name="enable_edit_before_call">false</item>
+  <item type="boolean" name="enable_voicemail">false</item>
+  <item type="string-array" name="led_color_code_table">
+  </item>
+  <item type="boolean" name="read_only_preload">false</item>
+  <item type="boolean" name="support_contact_picker_for_export_contact">false</item>
+</app>
+<app name="HtcDialer">
+  <item type="string" name="customizedDefaultCountry"></item>
+  <item type="boolean" name="customizedHintFontColor">false</item>
+  <item type="boolean" name="dial2ScreenAlways">false</item>
+  <item type="integer" name="dialerServiceIndexType">0</item>
+  <item type="boolean" name="enableHythen">false</item>
+  <item type="boolean" name="enableJIME">false</item>
+  <item type="boolean" name="enableMergeContact">true</item>
+  <item type="boolean" name="enableMessagePrefixFilter">false</item>
+  <item type="boolean" name="enableMyanmar">false</item>
+  <item type="boolean" name="enablePinyin">false</item>
+  <item type="boolean" name="enableSearchSuffix">false</item>
+  <item type="boolean" name="featureSecretCodeCustomization">false</item>
+  <item type="boolean" name="oneModenProject">false</item>
+  <item type="boolean" name="supportACGServiceName">false</item>
+  <item type="boolean" name="supportBlacklist">false</item>
+  <item type="boolean" name="supportCallHome">false</item>
+  <item type="boolean" name="supportCustomizedProjection">false</item>
+  <item type="boolean" name="supportEsurfing">false</item>
+  <item type="boolean" name="supportHideNumber">true</item>
+  <item type="boolean" name="supportHomeDialerAlwaysAskMe">false</item>
+  <item type="boolean" name="supportIpDial">false</item>
+  <item type="boolean" name="supportPlaceCallCheckMMICode">false</item>
+  <item type="boolean" name="supportReadPhoneState">false</item>
+  <item type="boolean" name="supportSarInfo">false</item>
+  <item type="boolean" name="supportSeparatedIpDialBySim">false</item>
+  <item type="boolean" name="supportShowCustomizedByOperator">true</item>
+  <item type="boolean" name="supportSlot1C2G">false</item>
+  <item type="boolean" name="supportSpeedDialCutomizedItemEditable">false</item>
+</app>
+<app name="HtcLocationService">
+  <item type="boolean" name="disable_timezone_notification">false</item>
+</app>
+<app name="HtcLoccksreen">
+  <item type="integer" name="device_performance_level">80</item>
+</app>
+<app name="HtcOMADM_SPCS">
+  <item type="string-array" name="omadm_common">
+  </item>
+  <item type="string-array" name="omadm_connection">
+  </item>
+  <item type="string-array" name="omadm_feature">
+  </item>
+</app>
+<app name="HtcVideoWidget">
+  <item type="boolean" name="htcvideowidget_disable_tv">false</item>
+  <item type="boolean" name="htcvideowidget_support_dts_logo">false</item>
+</app>
+<app name="Internet">
+  <item type="integer" name="double_tap_zoom_scale">18</item>
+  <item type="boolean" name="enable_dynamic_switching_rendering">true</item>
+  <item type="boolean" name="enable_GPU_upload">false</item>
+  <item type="boolean" name="enable_read_mode">false</item>
+  <item type="boolean" name="enable_smart_read_mode">false</item>
+  <item type="boolean" name="has_feature_apn_httpproxy">false</item>
+  <item type="boolean" name="has_feature_jp_proxy_settings">false</item>
+  <item type="boolean" name="has_feature_mainpage">false</item>
+  <item type="boolean" name="has_feature_mpdp">false</item>
+  <item type="boolean" name="has_feature_remove_search_engine">false</item>
+  <item type="boolean" name="has_feature_sim_check_dialog">false</item>
+  <item type="boolean" name="is_NV_devices">false</item>
+  <item type="integer" name="memory_limit">0</item>
+  <item type="boolean" name="need_to_remove_page_info">true</item>
+  <item type="boolean" name="send_title_url_together">false</item>
+  <item type="boolean" name="support_download_dialog_from_mail">false</item>
+  <item type="boolean" name="support_download_overwrite">false</item>
+  <item type="boolean" name="support_download_path">false</item>
+  <item type="boolean" name="support_filemanager">false</item>
+  <item type="boolean" name="support_MyCollections_folder">false</item>
+  <item type="boolean" name="support_OMA_hide_info">false</item>
+  <item type="boolean" name="support_OMA_nexturl_dialog">true</item>
+  <item type="boolean" name="support_rename_download_file">false</item>
+</app>
+<app name="Mail">
+  <item type="integer" name="calendarMaxWindowSize">5</item>
+  <item type="integer" name="contactMaxWindowSize">100</item>
+  <item type="string" name="customize_download_folder"></item>
+  <item type="boolean" name="enablePasswordRecovery">true</item>
+  <item type="boolean" name="hux_enabled">false</item>
+  <item type="boolean" name="imei_as_device_id">false</item>
+  <item type="integer" name="list_view_query_internal">3000</item>
+  <item type="integer" name="mail_list_query_limit">50</item>
+  <item type="integer" name="mailMaxWindowSize">50</item>
+  <item type="integer" name="mailMinWindowSize">5</item>
+  <item type="integer" name="new_mail_notification_version">2</item>
+  <item type="boolean" name="not_support_backup_restore_eas_account">false</item>
+  <item type="boolean" name="peak_random_max_limit">true</item>
+  <item type="boolean" name="radio_dormant_flag">false</item>
+  <item type="boolean" name="roaming_support_trip">false</item>
+  <item type="boolean" name="screen_lock_immediately_after_policy">false</item>
+  <item type="boolean" name="show_setup_wizard_icon">false</item>
+  <item type="boolean" name="support_notification_led_color">false</item>
+  <item type="integer" name="taskMaxWindowSize">100</item>
+</app>
+<app name="Media_Output">
+  <item type="integer" name="bt_scan_delay">4000</item>
+</app>
+<app name="Message">
+  <item type="string" name="message_ambs_application_id"></item>
+  <item type="boolean" name="message_mms_auto_adjust_slideshow_playing_region">false</item>
+  <item type="boolean" name="message_mms_correct_slideshow_text_region">false</item>
+  <item type="boolean" name="message_mms_force_related_with_smil">false</item>
+  <item type="integer" name="message_mms_min_phone_number_parsing_length">5</item>
+  <item type="boolean" name="message_mms_mt_use_device_time">false</item>
+  <item type="boolean" name="message_mms_reserve_pdu_header_buffer">false</item>
+  <item type="boolean" name="message_mms_show_expiry_setting">false</item>
+  <item type="boolean" name="message_mms_show_music_info_in_slideshow">true</item>
+  <item type="boolean" name="message_mms_support_attach_location">true</item>
+  <item type="boolean" name="message_mms_support_convert_long_sms_to_mms">true</item>
+  <item type="boolean" name="message_mms_support_device_timeout">false</item>
+  <item type="boolean" name="message_mms_support_download_expired_mms">true</item>
+  <item type="boolean" name="message_mms_support_group_message">true</item>
+  <item type="boolean" name="message_mms_support_header_proxy_authorization">false</item>
+  <item type="boolean" name="message_mms_support_ipv6">false</item>
+  <item type="boolean" name="message_mms_support_low_balance_notification">false</item>
+  <item type="boolean" name="message_mms_support_one_page_viewer">false</item>
+  <item type="boolean" name="message_mms_support_send_via_wifi">false</item>
+  <item type="boolean" name="message_mms_support_send_via_wimax">false</item>
+  <item type="boolean" name="message_mms_support_share_browser_screenshot">false</item>
+  <item type="boolean" name="message_mms_using_cid_in_smil">true</item>
+  <item type="boolean" name="message_sms_is_cdma_support_simsms">false</item>
+  <item type="boolean" name="message_sms_is_support_a9format_accentfilter_transform_set">false</item>
+  <item type="boolean" name="message_sms_is_support_cdma_cmasoverlte">false</item>
+  <item type="boolean" name="message_sms_is_support_cellbroadcast_notification_immutable">false</item>
+  <item type="boolean" name="message_sms_is_support_cl_alert">false</item>
+  <item type="boolean" name="message_sms_is_support_cmas_dropduplication_by_messageid">false</item>
+  <item type="boolean" name="message_sms_is_support_cmas_moreinfo_ui">false</item>
+  <item type="boolean" name="message_sms_is_support_default_enable_gsmcmas">false</item>
+  <item type="boolean" name="message_sms_is_support_forwardsmsview">false</item>
+  <item type="boolean" name="message_sms_is_support_k2_emoji_zoo_factor_3">false</item>
+  <item type="boolean" name="message_sms_is_support_k2_emoji_zoo_factor_6">false</item>
+  <item type="boolean" name="message_sms_is_support_nl_alert">true</item>
+  <item type="boolean" name="message_sms_is_support_p1format_accentfilter_transform_set">false</item>
+  <item type="boolean" name="message_sms_is_support_remove_locale_from_urllist">false</item>
+  <item type="boolean" name="message_sms_is_support_s5format_cmas_testalert_titlesummary">false</item>
+  <item type="boolean" name="message_sms_is_support_skip_people_blocklist_check">false</item>
+  <item type="boolean" name="message_sms_is_support_t4format_sms_statuscode">false</item>
+  <item type="boolean" name="message_sms_is_support_testcmas_setting">false</item>
+  <item type="boolean" name="message_sms_is_support_use_uri_as_senderaddress">false</item>
+</app>
+<app name="MusicChannel">
+  <item type="string" name="backbuffer_rgb_size">default</item>
+  <item type="integer" name="fps_quality">-1</item>
+  <item type="string" name="resolution_quality">default</item>
+</app>
+<app name="Nationalroaming">
+  <item type="boolean" name="allow_national_roaming">false</item>
+  <item type="string-array" name="national_roaming_mccmnc">
+  </item>
+  <item type="string-array" name="nationalRoamingUiSupportList">
+  </item>
+</app>
+<app name="OMACP">
+  <item type="boolean" name="support_omacp_wappush_soundvibrate">false</item>
+</app>
+<app name="Phone">
+  <item type="boolean" name="alternativeEccWay">false</item>
+  <item type="boolean" name="auto_answer_on_def">true</item>
+  <item type="boolean" name="callBarringDisabled">false</item>
+  <item type="integer" name="cdmaNetBusyToneId">-1</item>
+  <item type="integer" name="cdmaNetBusyToneLengthMillis">5000</item>
+  <item type="string" name="customizeVoiceMailCarrierName"></item>
+  <item type="integer" name="delayOfAllowIncomingRing">300</item>
+  <item type="boolean" name="disableHearingAidsCdma">false</item>
+  <item type="boolean" name="disableHearingAidsWorldPhone">false</item>
+  <item type="boolean" name="disableVoiceMailNumber">false</item>
+  <item type="integer-array" name="discardMipValues">
+    <int>-1</int>
+  </item>
+  <item type="boolean" name="displaySimNotReadableNotification">false</item>
+  <item type="boolean" name="dualSimDataRoamingPreferredSlot">true</item>
+  <item type="boolean" name="enableHearingAidsGsm">false</item>
+  <item type="boolean" name="enableUpdateAttrPsensorStatusHandsFree">false</item>
+  <item type="boolean" name="fdnDisabled">false</item>
+  <item type="boolean" name="featureCdmaApnSettings">false</item>
+  <item type="boolean" name="featureCdmaCallForwarding">false</item>
+  <item type="boolean" name="featureCdmaCallWaiting">false</item>
+  <item type="boolean" name="featureCdmaLteApnSettings">false</item>
+  <item type="boolean" name="featureCdmaLteNetworkSelector">false</item>
+  <item type="boolean" name="featureCdmaPreferredRoaming">true</item>
+  <item type="boolean" name="featureCDMATtyMode">true</item>
+  <item type="boolean" name="featureDataWaringBootUp">false</item>
+  <item type="boolean" name="featureGlobalRoamingOptions">false</item>
+  <item type="boolean" name="featureGSMTtyMode">false</item>
+  <item type="boolean" name="featureHttpRedirect">false</item>
+  <item type="boolean" name="featureNotLogEmergencyNumber">true</item>
+  <item type="boolean" name="featurePlusCodeDialing">false</item>
+  <item type="boolean" name="featurePreferredNetworkOptionLteBoundCdmaGsm">false</item>
+  <item type="boolean" name="featureSupportVoiceRecording">true</item>
+  <item type="boolean" name="hideCellBroadcastSetting">false</item>
+  <item type="boolean" name="isNoneOrientationSensorDevices">false</item>
+  <item type="boolean" name="isWaterProof">false</item>
+  <item type="boolean" name="needChangedPhoneNoticationSummary">true</item>
+  <item type="boolean" name="onlyQueryMoCallLog">false</item>
+  <item type="integer" name="preferred_network_type_mode_style">5</item>
+  <item type="boolean" name="showAccumulatorCallButton">false</item>
+  <item type="boolean" name="showApnNameInsteadOfApnInNotification">false</item>
+  <item type="boolean" name="supportActionQuickBootPoweron">false</item>
+  <item type="boolean" name="supportCellBroadcase">false</item>
+  <item type="boolean" name="supportDataRoamButton">false</item>
+  <item type="boolean" name="supportHomePlusCodePrefixNumber">false</item>
+  <item type="boolean" name="supportNationalRoaming">true</item>
+  <item type="boolean" name="supportNlAlert">true</item>
+  <item type="boolean" name="supportPowerBackOff">false</item>
+  <item type="boolean" name="supportSemiEccCalls">false</item>
+  <item type="boolean" name="supportShowSimPinAcceptMessageToast">false</item>
+  <item type="boolean" name="SupportTGPreferredMode">false</item>
+  <item type="boolean" name="supportTurnAirPlaneModeByAlarm">false</item>
+  <item type="boolean" name="supportUserPreferredNetworkList">false</item>
+  <item type="boolean" name="supportVivoPtb">false</item>
+  <item type="boolean" name="voLteEnableAutoDomain">false</item>
+  <item type="boolean" name="voLteEnabled">false</item>
+  <item type="boolean" name="voLteEnableImsToggle">false</item>
+  <item type="boolean" name="voLteEnableMultitasking">false</item>
+  <item type="boolean" name="voLteForbidSsDuringE911">false</item>
+</app>
+<app name="Phone_Contacts">
+  <item type="integer" name="cityidinfo_support_type">0</item>
+  <item type="boolean" name="customizeDialPadPrefix">false</item>
+  <item type="boolean" name="isMMSBlockedEnabled">true</item>
+  <item type="boolean" name="isSIMSDNEnabled">false</item>
+</app>
+<app name="Prism">
+  <item type="integer" name="default_allapps_grid_size">1</item>
+  <item type="integer" name="default_allapps_sort_type">0</item>
+  <item type="boolean" name="default_blink_feed">true</item>
+  <item type="boolean" name="embed_wallpaper">false</item>
+  <item type="boolean" name="enable_blinkfeed_feature">true</item>
+  <item type="boolean" name="feed_ui_elements_only_when_scrolling">false</item>
+  <item type="string-array" name="ignored_feed_providers">
+  </item>
+</app>
+<app name="RCSeService">
+  <item type="boolean" name="is_low_end_device">false</item>
+  <item type="boolean" name="show_wifi_connection_alert">false</item>
+  <item type="boolean" name="support_bidirection_richcall_session">true</item>
+  <item type="boolean" name="support_hardware_video_codec">true</item>
+  <item type="boolean" name="support_video_share">true</item>
+  <item type="boolean" name="transfer_rgb_to_yuv">false</item>
+</app>
+<app name="RSS_SN_Plugin">
+  <item type="string-array" name="preload_rss_feed">
+  </item>
+</app>
+<app name="Settings">
+  <item type="boolean" name="apn_disable_htc_mvno">false</item>
+  <item type="boolean" name="apn_display_ppp_number_data_bearer">false</item>
+  <item type="boolean" name="apn_force_hide_bearer">false</item>
+  <item type="boolean" name="apn_force_hide_protocol">false</item>
+  <item type="string-array" name="appinfo_force_stop_block_list">
+  </item>
+  <item type="string-array" name="ct_mccmnc_code">
+    <string>46003</string>
+    <string>46011</string>
+    <string>46012</string>
+    <string>45502</string>
+    <string>20404</string>
+    <string>45404</string>
+  </item>
+  <item type="string" name="customize_settings_voice_assistant">NULL</item>
+  <item type="boolean" name="default_always_scan_wifi_settings">false</item>
+  <item type="boolean" name="disable_sim_pin_ui">false</item>
+  <item type="boolean" name="enable_E911_for_US_only">false</item>
+  <item type="boolean" name="front_side_speaker">true</item>
+  <item type="boolean" name="HTC_EASY_ACCESS_ACTION">true</item>
+  <item type="boolean" name="mocana_vpn_support">false</item>
+  <item type="string" name="notification_flash_led_8color">-1;0000FF;0FFF3E;00FF00;C8C864;F000FF;EFC800;FF0000;45C800</item>
+  <item type="boolean" name="settings_cdma_eri_version">false</item>
+  <item type="boolean" name="settings_cdma_imei_none_wphone">false</item>
+  <item type="boolean" name="settings_cdma_life_call_timer_data_usage">false</item>
+  <item type="boolean" name="settings_cdma_meid_decimal">false</item>
+  <item type="boolean" name="settings_cdma_nai">false</item>
+  <item type="boolean" name="settings_cdma_remove_imei_sv">false</item>
+  <item type="boolean" name="settings_cdma_remove_meid">false</item>
+  <item type="boolean" name="settings_cdma_uicc_id">false</item>
+  <item type="boolean" name="settings_cdma_uicc_imsi">false</item>
+  <item type="boolean" name="settings_remove_device_serial_number">false</item>
+  <item type="boolean" name="settings_wifi_not_support_wispr_preference">false</item>
+  <item type="integer" name="settings_wifi_reminder_countdown">0</item>
+  <item type="boolean" name="settings_wifi_support_auto_hotspot_sign_in">true</item>
+  <item type="boolean" name="settings_wifi_support_ccx_config">false</item>
+  <item type="boolean" name="settings_wifi_support_disconnect_network">false</item>
+  <item type="boolean" name="settings_wifi_support_first_priority">false</item>
+  <item type="string-array" name="settings_wifi_support_specific_aka_ssid_list">
+  </item>
+  <item type="string-array" name="settings_wifi_support_specific_sim_ssid_list">
+  </item>
+  <item type="boolean" name="settings_wifi_support_toast_eap_sim_auto_logon">false</item>
+  <item type="boolean" name="support_consent_to_repair">false</item>
+  <item type="boolean" name="support_detailed_roaming">false</item>
+  <item type="boolean" name="support_dock_module">true</item>
+  <item type="boolean" name="support_roaming">true</item>
+  <item type="string-array" name="wifi_auto_join_ssid_list">
+  </item>
+  <item type="string-array" name="wifi_eap_type_support_list">
+    <string>PEAP</string>
+    <string>TLS</string>
+    <string>TTLS</string>
+    <string>PWD</string>
+    <string>SIM</string>
+    <string>AKA</string>
+  </item>
+  <item type="string-array" name="wifi_read_only_ssid_list">
+    <string>FreeWifi_secure</string>
+  </item>
+</app>
+<app name="Settings-Wireless_+_network-Mobile_network">
+  <item type="integer" name="customize_wimax_wording">-1</item>
+  <item type="boolean" name="support_turnoff_mobile_data_dialog">false</item>
+</app>
+<app name="Settings-Wireless_+_network-USB_tethering_">
+  <item type="boolean" name="Single_USB_tethering">false</item>
+  <item type="boolean" name="usb_storage_notification">false</item>
+</app>
+<app name="SmartCardServiceGemalto">
+  <item type="integer" name="seek_aid_container_no">0</item>
+  <item type="boolean" name="seek_is_kddi_sku">false</item>
+  <item type="boolean" name="seek_is_need_to_check_airplane_mode">false</item>
+  <item type="boolean" name="seek_is_need_to_check_sim_ready">true</item>
+  <item type="integer" name="seek_open_channel_template">1</item>
+  <item type="boolean" name="seek_support_felica_lock_service">false</item>
+  <item type="string" name="seek_uicc_name">SIM1</item>
+</app>
+<app name="SmartCardServiceGP">
+  <item type="integer" name="seek_aid_container_no">0</item>
+  <item type="boolean" name="seek_is_kddi_sku">false</item>
+  <item type="boolean" name="seek_is_need_to_check_sim_ready">true</item>
+  <item type="boolean" name="seek_is_vzw_sku">false</item>
+  <item type="integer" name="seek_open_channel_template">1</item>
+  <item type="string" name="seek_uicc_name">SIM1</item>
+</app>
+<app name="Software_Update_FOTA">
+  <item type="integer" name="support_capacity_threshold">0</item>
+  <item type="boolean" name="support_default_auto_update">false</item>
+  <item type="boolean" name="support_default_auto_update_apu">false</item>
+  <item type="boolean" name="support_enablehgc">false</item>
+  <item type="string" name="support_sms_message">NA</item>
+  <item type="boolean" name="support_switch_apn">true</item>
+</app>
+<app name="Stk">
+  <item type="integer" name="defaultStkUITimeout">40000</item>
+  <item type="boolean" name="launchBrowserAfterConfirmed">false</item>
+  <item type="boolean" name="removeStkIconWhenNoSIM">true</item>
+  <item type="boolean" name="supportLanguageChangeEvent">false</item>
+  <item type="boolean" name="supportLaunchDSS">false</item>
+  <item type="boolean" name="supportPriorityText">true</item>
+</app>
+<app name="SystemUI">
+  <item type="boolean" name="data_icon_h3l_d_enabled">false</item>
+  <item type="boolean" name="data_icon_s4t_spark_enable">true</item>
+  <item type="boolean" name="data_icon_t3s_show_h_for_3g">false</item>
+  <item type="boolean" name="isHtcStyleRecentApp">true</item>
+  <item type="string-array" name="navigation_items">
+    <string>back</string>
+    <string>home</string>
+    <string>recent</string>
+  </item>
+  <item type="integer" name="NMS_feature_flashlight_color_amber">13107200</item>
+  <item type="integer" name="NMS_feature_flashlight_color_green">51200</item>
+  <item type="boolean" name="notification_light_behavior_options">true</item>
+  <item type="integer-array" name="quick_setting_available_items">
+    <int>0</int>
+    <int>1</int>
+    <int>3</int>
+    <int>4</int>
+    <int>5</int>
+    <int>6</int>
+    <int>7</int>
+    <int>8</int>
+    <int>9</int>
+    <int>10</int>
+    <int>11</int>
+    <int>12</int>
+    <int>13</int>
+    <int>14</int>
+    <int>15</int>
+    <int>19</int>
+    <int>20</int>
+    <int>22</int>
+    <int>25</int>
+    <int>26</int>
+    <int>30</int>
+    <int>32</int>
+    <int>33</int>
+  </item>
+  <item type="integer-array" name="quick_setting_items">
+    <int>3</int>
+    <int>4</int>
+    <int>8</int>
+    <int>1</int>
+    <int>7</int>
+    <int>6</int>
+    <int>30</int>
+    <int>5</int>
+    <int>9</int>
+    <int>14</int>
+    <int>10</int>
+    <int>32</int>
+  </item>
+  <item type="integer-array" name="quick_setting_items_simple">
+    <int>0</int>
+    <int>1</int>
+    <int>2</int>
+    <int>3</int>
+    <int>4</int>
+    <int>5</int>
+    <int>7</int>
+    <int>9</int>
+    <int>10</int>
+    <int>11</int>
+  </item>
+  <item type="integer" name="quick_setting_replace_fp">9</item>
+  <item type="integer-array" name="receiver_mode_pull_threshold">
+    <int>50</int>
+    <int>0</int>
+  </item>
+  <item type="boolean" name="show_3g_for_evdo">false</item>
+  <item type="boolean" name="show_4g_for_lte">true</item>
+  <item type="boolean" name="support_HtcStyleRecentApp">true</item>
+</app>
+<app name="Tethering_provision">
+  <item type="integer" name="TetheringGuard_Rule">0</item>
+</app>
+<app name="ThemeSelector">
+  <item type="string-array" name="cmf_theme_color">
+    <string>cc=GOD00:wp=wallpapers_07.jpg:c1=#857663:c2=#73a1ae:c3=#8c7f6f:c4=#46413d:c1k=#4c4439:c2k=#405361:c3k=#403b35:c4k=#292522:c1l=#f4bd56:c2l=#96f2ef:c3l=#ffb661:c4l=#ffb661:d1=#857663:d2=#73a1ae:d3=#8c7f6f:d4=#46413d</string>
+    <string>cc=DEF00:wp=wallpapers_00.jpg:c1=#0e5e8c:c2=#0073c3:c3=#159a79:c4=#3d444d:c1k=#002d4c:c2k=#003459:c3k=#264c43:c4k=#25282d:c1l=#1ac6fe:c2l=#1ac6fe:c3l=#06d6b0:c4l=#06d6b0:d1=#0e5e8c:d2=#0073c3:d3=#159a79:d4=#3d444d</string>
+    <string>cc=PIN00:wp=wallpapers_08.jpg:c1=#ff647e:c2=#00afab:c3=#ff7376:c4=#62b1bd:c1k=#dc5a71:c2k=#009b97:c3k=#dd686b:c4k=#599faa:c1l=#ff99aa:c2l=#45e6e0:c3l=#ffb2b4:c4l=#80eeff:d1=#ff647e:d2=#00afab:d3=#ff7376:d4=#62b1bd</string>
+  </item>
+  <item type="string-array" name="default_theme_color">
+    <string>id=com.htc.theme.tcceac82e-953e-43df-bdac-cbb094435004:title=Pastorale:c1=#334932:c2=#f16125:c3=#637a46:c4=#00b79f:c1k=#1e402b:c2k=#b4481b:c3k=#4d6136:c4k=#028b78:c1l=#d8b827:c2l=#b4481b:c3l=#f16125:c4l=#d8b827:d1=#334932:d2=#f16125:d3=#637a46:d4=#00b79f</string>
+    <string>id=com.htc.theme.t1e4578e0-0df4-4c4f-8941-4df7511459fd:title=Numéro:c1=#7fd3c4:c2=#f68b9f:c3=#bdbcb9:c4=#a4a4a1:c1k=#72bdb0:c2k=#c86579:c3k=#b2b0ae:c4k=#959492:c1l=#f68b9f:c2l=#7fd3c4:c3l=#7fd3c4:c4l=#7fd3c4:d1=#7fd3c4:d2=#f68b9f:d3=#bdbcb9:d4=#a4a4a1</string>
+    <string>id=com.htc.theme.tc5962215-448b-47ad-8428-dab9ce38e070:title=Innerspace:c1=#58c9a5:c2=#29c7d3:c3=#5d3d7f:c4=#f8bd1f:c1k=#2d9476:c2k=#24949e:c3k=#452b61:c4k=#bb911e:c1l=#71ffd2:c2l=#252e42:c3l=#d9e021:c4l=#29c7d3:d1=#58c9a5:d2=#29c7d3:d3=#5d3d7f:d4=#f8bd1f</string>
+    <string>id=com.htc.theme.ta02d84bb-bff9-4d74-8c5c-396e29c27067:title=Traction:c1=#f44336:c2=#f44336:c3=#f44336:c4=#f44336:c1k=#411310:c2k=#411310:c3k=#411310:c4k=#411310:c1l=#ff5e52:c2l=#ff5e52:c3l=#ff5e52:c4l=#ff5e52:d1=#f44336:d2=#411310:d3=#9c2820:d4=#ff5e52</string>
+    <string>id=com.htc.theme.t4958e5c8-4a86-4d2f-8ad7-a491a790b18d:title=Tilt:c1=#1f1e20:c2=#1f1e20:c3=#1f1e20:c4=#1f1e20:c1k=#0c0c0d:c2k=#0c0c0d:c3k=#0c0c0d:c4k=#0c0c0d:c1l=#188df2:c2l=#188df2:c3l=#188df2:c4l=#188df2:d1=#0c0c0d:d2=#1f1e20:d3=#404040:d4=#188df2</string>
+    <string>id=com.htc.theme.td77bd697-2811-482e-961f-e65cbdffdf65:title=Nimbus:c1=#a6744b:c2=#a6744b:c3=#a6744b:c4=#a6744b:c1k=#4d3522:c2k=#4d3522:c3k=#4d3522:c4k=#4d3522:c1l=#ffb273:c2l=#ffb273:c3l=#ffb273:c4l=#ffb273:d1=#a6744b:d2=#4d3522:d3=#8f6542:d4=#ffb273</string>
+    <string>id=com.htc.theme.tb930c680-2eae-47da-909f-992e4f061056:title=Origami:c1=#0096b6:c2=#3bd8b9:c3=#d2916e:c4=#f55732:c1k=#006a81:c2k=#44967c:c3k=#a66342:c4k=#bb5841:c1l=#f55732:c2l=#f55732:c3l=#3bd8b9:c4l=#0096b6:d1=#0096b6:d2=#3bd8b9:d3=#d2916e:d4=#f55732</string>
+    <string>id=com.htc.theme.t51edf118-cfb9-465d-b1e4-d650534b8e9c:title=Cascadia:c1=#273e81:c2=#20a9ff:c3=#4e3fdf:c4=#7f2085:c1k=#101936:c2k=#146699:c3k=#2a2278:c4k=#49124d:c1l=#4d79ff:c2l=#fff776:c3l=#41dce8:c4l=#f665ff:d1=#273e81:d2=#20a9ff:d3=#4e3fdf:d4=#7f2085</string>
+  </item>
+</app>
+<app name="TMOUS_IMS">
+  <item type="boolean" name="enable_new_wifi_ims">false</item>
+  <item type="boolean" name="enable_wifi_ims">false</item>
+</app>
+<app name="Trim_n_Slow">
+  <item type="boolean" name="trim_n_slow_allow_slow_motion_edit">true</item>
+</app>
+<app name="Visual_Search">
+  <item type="boolean" name="Htc_visual_search_is_enable">true</item>
+</app>
+<app name="Voice_Recorder">
+  <item type="boolean" name="Record_QCP_format">false</item>
+</app>
+<app name="Volume_Controller">
+  <item type="integer" name="safe_volume_timeout">10</item>
+  <item type="boolean" name="support_ringback_tone">false</item>
+  <item type="boolean" name="support_toogle_use_ring_volume_for_notify">true</item>
+</app>
+<app name="VZWQualityLogger">
+  <item type="string" name="enabled_events">Q001,Q002,Q003,Q004,Q005,Q006,Q010,Q011,Q012,Q020,Q021,Q022,Q023|0|H001,H002,H003,H004,H005,H006,H007</item>
+  <item type="boolean" name="support_quality_logger">false</item>
+</app>
+<app name="Weather">
+  <item type="boolean" name="hide_vendor_logo">false</item>
+</app>
+<app name="Wi-Fi Hotspot">
+  <item type="boolean" name="support_showpassword">false</item>
+</app>
+<app name="WorldClock">
+  <item type="boolean" name="isSupportAlarmVolumeKeyInSilentMode">true</item>
+</app>
+<system>
+  <item type="boolean" name="build_to_preload">true</item>
+  <item type="integer" name="chipset">1</item>
+  <item type="integer" name="device_type">1</item>
+  <item type="integer" name="dual_sim_device_data_type">0</item>
+  <item type="string" name="extra_sense_version">7.0</item>
+  <item type="boolean" name="feature_auto_sim_switch">false</item>
+  <item type="boolean" name="for_nel">false</item>
+  <item type="boolean" name="front_flashlight">false</item>
+  <item type="boolean" name="has_its_on_ap">false</item>
+  <item type="boolean" name="has_three_modems">false</item>
+  <item type="boolean" name="have_front_camera">true</item>
+  <item type="boolean" name="isidda_device">false</item>
+  <item type="string" name="original_sense_version">7.0</item>
+  <item type="integer" name="radio_type">4</item>
+  <item type="integer" name="region">6</item>
+  <item type="string" name="sense_version">7.0</item>
+  <item type="boolean" name="single_modem_dsda_device">false</item>
+  <item type="integer" name="sku_id">99</item>
+  <item type="integer" name="sub_sku_id">0</item>
+  <item type="boolean" name="support_3lm">false</item>
+  <item type="boolean" name="support_beats_audio">false</item>
+  <item type="boolean" name="support_boomsound_effect">true</item>
+  <item type="boolean" name="support_cb_on_dual">false</item>
+  <item type="boolean" name="support_china_sense_feature">false</item>
+  <item type="boolean" name="support_china_sense_typeb_feature">false</item>
+  <item type="boolean" name="support_china_sense_typeb_new_feature">false</item>
+  <item type="boolean" name="support_dlna">true</item>
+  <item type="boolean" name="support_dual_lens">false</item>
+  <item type="boolean" name="support_dual_sim">false</item>
+  <item type="boolean" name="support_fingerprint">false</item>
+  <item type="boolean" name="support_hide_select_runtime">false</item>
+  <item type="boolean" name="support_ir">true</item>
+  <item type="boolean" name="support_lte">true</item>
+  <item type="boolean" name="support_sim_card">true</item>
+  <item type="string" name="support_volte">false</item>
+  <item type="boolean" name="support_Wifioffload">false</item>
+  <item type="boolean" name="support_wimax">false</item>
+  <item type="boolean" name="use_stock_ui">false</item>
+  <item type="integer" name="vibration_duration">14</item>
+  <item type="boolean" name="wifi_only">false</item>
+</system>
+</configurations>

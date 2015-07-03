@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<migratepackages>
+    <!-- USS600, IME, Raymond Wu -->
+    <package src="com.htc.android.htcime" dst="com.htc.sense.ime">
+        <item name="app_db"/>
+        <item name="app_hwr"/>
+        <item name="pplearn.dat"/>
+        <item name="cp_tc_hw_udb.dat"/>
+    </package>
+    <!-- U51300, Software_Update_FOTA, Alven Mao -->
+    <package src="com.android.providers.htcCheckin" dst="com.htc.checkinprovider">
+        <item name="firstTimeCheckinSuccess"/>
+    </package>
+</migratepackages>

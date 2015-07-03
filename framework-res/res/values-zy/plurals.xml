@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pinpuk_attempts">
+        <item quantity="other">You have %d remaining attempts before SIM is locked.</item>
+        <item quantity="one">You have %d remaining attempt before SIM is locked.</item>
+    </plurals>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d စကၠန္႔မတိုင္ခင္</item>
+        <item quantity="one">၁ စကၠန္႔မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d မိနစ္ မတိုင္ခင္</item>
+        <item quantity="one">၁ မိနစ္ မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d နာရီ မတိုင္ခင္</item>
+        <item quantity="one">၁ နာရီ မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">%d ရက္ အရင္</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d ရက္ မတိုင္ခင္</item>
+        <item quantity="one">မေန႔က</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%d စကၠန္႔အတြင္း</item>
+        <item quantity="one">၁ စကၠန္႔အတြင္း</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%d မိနစ္အတြင္း</item>
+        <item quantity="one">၁ မိနစ္ အတြင္း</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%d နာရီအတြင္း</item>
+        <item quantity="one">၁ နာရီအတြင္း</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%d ရက္ အတြင္း</item>
+        <item quantity="one">မေန႔က</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d စကၠန္႔မတိုင္ခင္</item>
+        <item quantity="one">၁ စကၠန္႔မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d မိနစ္ မတိုင္ခင္</item>
+        <item quantity="one">၁ မိနစ္ မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d နာရီမ်ားစြာ ၾကာၿပီးေနာက္</item>
+        <item quantity="one">၁ နာရီ မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">အရင္ %d ရက္</item>
+        <item quantity="one">မေန႔က</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%d စကၠန္႔အတြင္း</item>
+        <item quantity="one">၁ စကၠန္႔အတြင္း</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">%d မိနစ္အတြင္း</item>
+        <item quantity="one">၁ မိနစ္ မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%d နာရီအတြင္း</item>
+        <item quantity="one">၁ နာရီ မတိုင္ခင္</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">in %d ေန႔</item>
+        <item quantity="one">မနက္ျဖန္</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d စကၠန္႔</item>
+        <item quantity="one">1 စကၠန္႔</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d မိနစ္</item>
+        <item quantity="one">1 မိနစ္</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d နာရီ</item>
+        <item quantity="one">1 နာရီ</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Wi-Fi ကြန္ယက္ရႏိုင္</item>
+        <item quantity="one">Wi-Fi ကြန္ယက္ရႏိုင္</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Wi-Fi ကြန္ယက္ဖြင့္</item>
+        <item quantity="one">Wi-Fi ကြန္ယက္ဖြင့္</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d of %2$d</item>
+        <item quantity="one">1 ကိုက္ညီ</item>
+    </plurals>
+    <plurals name="restr_pin_countdown">
+        <item quantity="other">%d စကၠန္႔အတြင္း ျပန္ႀကိဳးစားပါ</item>
+        <item quantity="one">၁ စကၠန္႔အတြင္း ျပန္ႀကိဳးစားပါ</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes">
+        <item quantity="other">%d မိနစ္အတြက္</item>
+        <item quantity="one">တစ္မိနစ္အတြက္</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours">
+        <item quantity="other">%d နာရီအတြက္</item>
+        <item quantity="one">တစ္နာရီအတြက္</item>
+    </plurals>
+</resources>

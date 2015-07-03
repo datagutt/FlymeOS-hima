@@ -1,0 +1,153 @@
+﻿<?xml version="1.0"?>
+<FavoriteItemMap>
+    <item>
+		<application type="base">
+            <packageName>com.android.htccontacts</packageName>
+            <className>com.android.htccontacts.DialerTabActivity</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.contacts</packageName>
+            <className>com.htc.contacts.DialerTabActivity</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.mms</packageName>
+            <className>com.android.mms.ui.ConversationList</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.sense.mms</packageName>
+            <className>com.htc.sense.mms.ui.ConversationList</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.mms</packageName>
+            <className>com.android.mms.ui.CmasListActivityShortCut</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.sense.mms</packageName>
+            <className>com.htc.sense.mms.ui.CmasListActivityShortCut</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.mms</packageName>
+            <className>com.android.mms.ui.MessageTabActivity</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.sense.mms</packageName>
+            <className>com.htc.sense.mms.ui.MessageTabActivity</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.browser</packageName>
+            <className>com.android.browser.BrowserActivity</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.sense.browser</packageName>
+            <className>com.htc.sense.browser.BrowserActivity</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.htccontacts</packageName>
+            <className>com.android.htccontacts.BrowseLayerCarouselActivity</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.contacts</packageName>
+            <className>com.htc.contacts.BrowseLayerCarouselActivity</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.camera</packageName>
+            <className>com.android.camera.CameraEntry</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.camera</packageName>
+            <className>com.htc.camera.CameraEntry</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.htc.calculator</packageName>
+            <className>com.htc.calculator.Calculator</className>
+        </application>
+		<application type="target">
+            <packageName>com.android.calculator2</packageName>
+            <className>com.android.calculator2.Calculator</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.android.updater</packageName>
+            <className>com.android.updater.ui.UpdaterMainActivity</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.updater</packageName>
+            <className>com.htc.updater.ui.UpdaterMainActivity</className>
+        </application>
+    </item>
+    <item>
+		<application type="base">
+            <packageName>com.google.android.gms</packageName>
+            <className>com.google.android.gms.common.settings.GoogleSettingsActivity</className>
+        </application>
+        <application type="target">
+            <packageName>com.google.android.gms</packageName>
+            <className>com.google.android.gms.app.settings.GoogleSettingsActivity</className>
+        </application>
+    </item>
+    <item>
+        <application type="base">
+            <packageName>com.bookmarkshortcut20130808103832021</packageName>
+            <className>com.bookmarkshortcut20130808103832021.UrlLauncher</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.sense.woactivity</packageName>
+            <className>com.htc.sense.woactivity.Wo3GActivity</className>
+        </application>
+    </item>
+    <item>
+        <application type="base">
+            <packageName>com.htc.htccnfilemanager</packageName>
+            <className>com.htc.htccnfilemanager.htccnFileManager</className>
+        </application>
+        <application type="target">
+            <packageName>com.htc.filemanager</packageName>
+            <className>com.htc.filemanager.FileManagerActivity</className>
+        </application>
+    </item>
+    <item>
+		<appWidget type="base">
+            <packageName>com.htc.android.calculator.widget</packageName>
+            <className>com.htc.android.calculator.widget.WidgetLightProvider</className>
+        </appWidget>
+        <appWidget type="target">
+            <packageName>com.htc.calculator.widget</packageName>
+            <className>com.htc.calculator.widget.WidgetLightProvider</className>
+        </appWidget>
+    </item>
+    <item>
+		<appWidget type="base">
+            <packageName>com.htc.android.calculator.widget</packageName>
+            <className>com.htc.android.calculator.widget.WidgetDarkProvider</className>
+        </appWidget>
+        <appWidget type="target">
+            <packageName>com.htc.calculator.widget</packageName>
+            <className>com.htc.calculator.widget.WidgetDarkProvider</className>
+        </appWidget>
+    </item>
+    <item>
+		<appWidget type="base">
+            <packageName>com.android.browser</packageName>
+            <className>com.android.browser.widget.BookmarkThumbnailWidgetProvider</className>
+        </appWidget>
+        <appWidget type="target">
+            <packageName>com.htc.sense.browser</packageName>
+            <className>com.htc.sense.browser.widget.BookmarkThumbnailWidgetProvider</className>
+        </appWidget>
+    </item>
+</FavoriteItemMap>
