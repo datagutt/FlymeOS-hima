@@ -123,7 +123,6 @@ wifi                                      u:object_r:system_server_service:s0
 window                                    u:object_r:system_server_service:s0
 
 *                                         u:object_r:default_android_service:s0
-<<<<<<< VENDOR #Conflict 0
 #line 1 "device/qcom/sepolicy/common/service_contexts"
 ABTPersistenceService                          u:object_r:system_server_service:s0
 AtCmdFwd                                       u:object_r:atfwd_service:s0
@@ -143,7 +142,6 @@ htctelephony                                   u:object_r:radio_service:s0
 wireless_display                               u:object_r:system_server_service:s0
 #HTC_WIFI_END
 
-=======
 access_control                            u:object_r:system_server_service:s0
 move_window                               u:object_r:system_server_service:s0
 flyme_wallpaper                           u:object_r:system_server_service:s0
@@ -181,4 +179,3 @@ flyme_permission                          u:object_r:system_server_service:s0
 #FLYME:liuyongjie@shell.FlymePackageManager.Feature {@
 flyme_packagemanager                      u:object_r:system_server_service:s0
 #@}
->>>>>>> BOSP #Conflict 0
