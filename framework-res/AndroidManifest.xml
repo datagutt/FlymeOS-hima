@@ -651,5 +651,26 @@
         <service android:exported="true" android:name="com.android.server.backup.FullBackupJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <service android:exported="true" android:name="com.android.server.pm.BackgroundDexOptService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <service android:exported="true" android:name="com.android.server.ShowWatermarkService"/>
+        <activity android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="false" android:name="com.android.internal.app.RecommendActivity" android:process=":ui" android:theme="@style/Theme.Holo.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.intent.action.RECOMMEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.android.server.pm.UpdatePermissionsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.APP_PERMISSION_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.server.pm.UpdateAppsReceiver" android:primaryUserOnly="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
