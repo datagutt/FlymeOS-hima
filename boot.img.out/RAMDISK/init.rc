@@ -1029,6 +1029,12 @@ service usbdiag_init  /system/bin/sh /init.usbdiag.sh
     oneshot
 #-- 2014.10.28 USB Team, PCN10002 --
 
+# Flyme kuangqianbo add for meizu own daemon { @
+service flymed /system/bin/flymed
+    class main
+    socket flymed stream 0660 root system
+# @ }
+
 service debuggerd /system/bin/debuggerd
     class main
     cgroup bg
